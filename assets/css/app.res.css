@@ -1276,6 +1276,17 @@
     max-height: 100%;
     overflow: visible;
   }
+
+  /* ===============================
+  => aviation page
+  =============================== */
+  .section {
+    padding-block: 10%;
+  }
+
+  .common-flex > * {
+    flex: 0 0 100% !important;
+  }
 }
 
 @media all and (max-width: 767px) {

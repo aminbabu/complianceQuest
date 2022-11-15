@@ -3372,6 +3372,7 @@ textarea.form-control {
 }
 
 .cq-list .cq-list__item::before {
+  flex-shrink: 0;
   display: inline-block;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -3441,12 +3442,12 @@ textarea.form-control {
   margin-top: 2.4rem;
 }
 
-.organization-growth .article-list {
+.fancy-cq-list {
   display: grid;
   gap: 1.6rem;
 }
 
-.organization-growth .article__item-link {
+.fancy-cq-item__link {
   background: var(--cq-white, #ffffff);
   box-shadow: 0 0.4rem 5rem var(--cq-mostly-white-100, #f2f2f2);
   border-radius: 2rem;
@@ -3458,11 +3459,11 @@ textarea.form-control {
   position: relative;
 }
 
-.organization-growth .article__item-link:hover {
+.fancy-cq-item__link:hover {
   border-color: var(--cq-strong-blue, #0072bc);
 }
 
-.organization-growth .article__item-link:hover::before {
+.fancy-cq-item__link:hover::before {
   content: "";
   background-image: url("../images/article-leaf.png");
   background-repeat: no-repeat;
@@ -4317,4 +4318,65 @@ textarea.form-control {
 .company-inner-wrapper {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr);
+}
+
+/* ==========================
+aviation page
+========================== */
+.section {
+  padding-block: 8%;
+}
+
+.common-section-header {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.common-flex {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.common-flex > .content {
+  flex: 0 0 50%;
+}
+
+.common-flex > .inner-img-lg,
+.common-flex > .section-img {
+  flex: 0 0 40%;
+}
+
+.cq-list-leaf .cq-list__item::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/list-bullet-leaf.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cq-list__item a {
+  text-decoration: none;
+  color: var(--cq-very-dark-gray-200, #484848);
+}
+
+.cq-list__item a:hover {
+  color: var(--cq-strong-blue, #0072bc);
+}
+
+/* cq challenges */
+.cq-challenges .fancy-cq-item__link {
+  display: inline-grid;
+  grid-template-columns: 2.4rem auto;
+  gap: 1rem;
+}
+
+.cq-challenges .fancy-cq-item__link::before {
+  left: 100%;
+  transform: rotateY(180deg);
 }
