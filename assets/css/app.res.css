@@ -1259,6 +1259,7 @@
     text-align: center;
   }
 
+  .navbar-menu__item.active .navbar-menu__item-link,
   .navbar-menu__item:hover .navbar-menu__item-link {
     margin-bottom: 2rem;
   }
@@ -1270,6 +1271,7 @@
     overflow: hidden;
   }
 
+  .navbar-menu__item.active .mega-menu,
   .navbar-menu__item:hover .mega-menu {
     max-height: 100%;
     overflow: visible;
@@ -1824,6 +1826,10 @@
   .leadershipt-team .team-member {
     width: 6rem;
     height: 6rem;
+  }
+
+  .mega-menu .mega-menu-tab-pane .content {
+    grid-template-columns: 1fr !important;
   }
 }
 

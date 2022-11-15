@@ -788,11 +788,13 @@ textarea.form-control {
   transition: 300ms ease;
 }
 
+.navbar-menu__item.active .navbar-menu__item-link,
 .navbar-menu__item:hover .navbar-menu__item-link {
   color: var(--cq-strong-blue, #0072bc);
   text-decoration: underline;
 }
 
+.navbar-menu__item.active .mega-menu,
 .navbar-menu__item:hover .mega-menu {
   opacity: 1;
   visibility: visible;
