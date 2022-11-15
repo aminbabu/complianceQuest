@@ -313,6 +313,48 @@ GLOB.initModal = function () {
   });
 };
 
+// tabs
+GLOB.inittabs = function () {
+  const navs = Array.from(document.querySelectorAll(".mega-menu__item"));
+
+  if (!navs.length) return;
+
+  function handleEvent(elem) {
+    const id = elem.getAttribute("href") || elem.dataset.href;
+    const panes = elem
+      .closest(".mega-menu")
+      .querySelectorAll(".mega-menu-tab-pane");
+    const navs = elem
+      .closest(".mega-menu")
+      .querySelectorAll(".mega-menu__item");
+    const activePane = document.querySelector(id);
+
+    panes.forEach(function (pane) {
+      pane.classList.remove("show");
+    });
+    navs.forEach(function (nav) {
+      nav.classList.remove("active");
+    });
+    activePane.classList.add("show");
+    elem.classList.add("active");
+  }
+
+  function handleTab(nav) {
+    nav.addEventListener("click", function (e) {
+      e.preventDefault();
+      const elem = e.target;
+      handleEvent(elem);
+    });
+    nav.addEventListener("mouseover", function (e) {
+      e.preventDefault();
+      const elem = e.target;
+      handleEvent(elem);
+    });
+  }
+
+  navs.forEach(handleTab);
+};
+
 // document on load
 document.addEventListener("DOMContentLoaded", function () {
   // toggle menu
@@ -439,6 +481,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // type writer
   GLOB.createTypeWriter();
+  // tabs initialization
+  GLOB.inittabs();
 
   /*****************************************
    * Doc Management Page

@@ -291,6 +291,15 @@
   .common-query-modal .card-body > * {
     flex: 0 0 100%;
   }
+
+  /* mega menu */
+  .cq-mega-item-list-col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cq-mega-item-list-col-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -386,10 +395,11 @@
     position: fixed;
     inset: 0;
     z-index: 9999;
-    padding-top: 12rem;
+    padding-block: 12rem 3.2rem;
     opacity: 0;
     visibility: hidden;
     transition: 300ms ease;
+    overflow: hidden auto;
   }
 
   .navbar-main-sm.show {
@@ -1237,6 +1247,33 @@
     width: 3rem;
     height: 3rem;
   }
+
+  .navbar-menu__item {
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .navbar-menu__item-link {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-menu__item:hover .navbar-menu__item-link {
+    margin-bottom: 2rem;
+  }
+
+  /* mega menu */
+  .mega-menu {
+    position: static;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-menu__item:hover .mega-menu {
+    max-height: 100%;
+    overflow: visible;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -1768,6 +1805,26 @@
     background: none;
     padding-bottom: 60px;
   }
+
+  /* mega menu */
+  .mega-menu .inner-wrapper {
+    display: flex !important;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mega-menu .inner-wrapper > * {
+    flex: 0 0 100%;
+  }
+
+  .cq-mega-item-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leadershipt-team .team-member {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -2067,6 +2124,15 @@
     font-size: 1.375rem;
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  /* mega menu */
+  .mega-menu .mega-menu-tab-pane .content {
+    grid-template-columns: 1fr;
+  }
+
+  .cq-mega-item-list {
+    grid-template-columns: 1fr;
   }
 }
 
