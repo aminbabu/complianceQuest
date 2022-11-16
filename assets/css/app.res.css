@@ -182,11 +182,11 @@
   }
 
   /* key metrics */
-  .key-metrics .metrics-list__item {
+  .metrics-list .metrics-list__item {
     flex: 0 0 calc(100% / 4 - 1.6rem);
   }
 
-  .key-metrics .metrics-list__item img {
+  .metrics-list .metrics-list__item img {
     width: 3.2rem;
   }
 
@@ -299,6 +299,11 @@
 
   .cq-mega-item-list-col-4 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* cq quality management benefits */
+  .cq-quality-management .flex > * {
+    flex: 0 0 calc(100% / 2 - 2.4rem);
   }
 }
 
@@ -531,7 +536,7 @@
   }
 
   /* key metrics */
-  .key-metrics .metrics-list__item {
+  .metrics-list .metrics-list__item {
     flex: 0 0 calc(100% / 3 - 1.6rem);
   }
 
@@ -665,7 +670,7 @@
   .cq-list-group::before,
   .cq-list-group::after {
     width: 2rem;
-    height: 71%;
+    height: 72%;
   }
 
   .cq-list-group::before {
@@ -1287,6 +1292,22 @@
   .common-flex > * {
     flex: 0 0 100% !important;
   }
+
+  /* ===============================
+  => quality management page
+  =============================== */
+  .section-top {
+    padding-top: 10%;
+  }
+
+  .section-bottom {
+    padding-bottom: 10%;
+  }
+
+  /* our customers use */
+  .our-customers-use .metrics-list__item {
+    flex: 0 0 calc(100% / 3 - 2rem);
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -1397,11 +1418,11 @@
     text-align: left;
   }
 
-  .key-metrics .metrics-list__item {
+  .metrics-list .metrics-list__item {
     text-align: center;
   }
 
-  .key-metrics .metrics-list__item .top {
+  .metrics-list .metrics-list__item .top {
     flex-direction: column-reverse;
   }
 
@@ -1439,7 +1460,7 @@
   .cq-list-group::before,
   .cq-list-group::after {
     width: 1.2rem;
-    height: 72.5%;
+    height: 73%;
   }
 
   .cq-list-group::before {
@@ -1842,6 +1863,16 @@
   .mega-menu .mega-menu-tab-pane .content {
     grid-template-columns: 1fr !important;
   }
+
+  /* cq quality management benefits */
+  .cq-quality-management .flex > * {
+    flex: 0 0 100%;
+  }
+
+  /* our customers use */
+  .our-customers-use .metrics-list__item {
+    flex: 0 0 calc(100% / 2 - 2rem);
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -1895,7 +1926,7 @@
   }
 
   /* key metrics */
-  .key-metrics .metrics-list__item {
+  .metrics-list .metrics-list__item {
     flex: 0 0 calc(100% / 2 - 1.6rem);
   }
 
@@ -1940,7 +1971,7 @@
   /* cq solutions */
   .cq-list-group::before,
   .cq-list-group::after {
-    height: 79%;
+    height: 79.5%;
   }
 
   .cq-list-group::before {
@@ -2151,6 +2182,26 @@
   .cq-mega-item-list {
     grid-template-columns: 1fr;
   }
+
+  /* cq challenges area */
+  .cq-challenges-card {
+    padding-top: 4.8rem;
+    height: auto;
+    margin-top: 6.4rem;
+    margin-left: 0;
+  }
+
+  .cq-challenges-card .icon-box {
+    top: auto;
+    right: auto;
+    bottom: calc(100% - 2.4rem);
+    left: 2.4rem;
+  }
+
+  /* our customers use */
+  .our-customers-use .metrics-list__item {
+    flex: 0 0 100%;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -2178,7 +2229,7 @@
 
   .cq-list-group::before,
   .cq-list-group::after {
-    height: 78%;
+    height: 78.5%;
     translate: 0 -51%;
   }
 }
