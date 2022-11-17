@@ -1308,6 +1308,22 @@
   .our-customers-use .metrics-list__item {
     flex: 0 0 calc(100% / 3 - 2rem);
   }
+
+  /* =============================
+  => checklists page
+  ============================== */
+  .checklists-and-templates .card {
+    padding: 1.6rem;
+  }
+
+  .checklist-card .icon-box {
+    padding-inline: 2rem;
+  }
+
+  .checklist-card .icon-box img {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -1873,6 +1889,28 @@
   .our-customers-use .metrics-list__item {
     flex: 0 0 calc(100% / 2 - 2rem);
   }
+
+  /* =============================
+  => checklists page
+  ============================== */
+  .checklists-and-templates .card.checklist-query-card {
+    background-color: var(--cq-white, #ffffff);
+    box-shadow: 0px 4px 50px #f2f2f2;
+    max-width: 100%;
+  }
+
+  .checklists-and-templates .checklist-items {
+    grid-template-columns: 1fr;
+  }
+
+  .checklist-card .icon-box {
+    padding-inline: 3rem;
+  }
+
+  .checklist-card .icon-box img {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -2201,6 +2239,30 @@
   /* our customers use */
   .our-customers-use .metrics-list__item {
     flex: 0 0 100%;
+  }
+
+  /* =============================
+  => checklists page
+  ============================== */
+  .checklists-and-templates .card {
+    padding: 1rem;
+  }
+
+  .checklists-and-templates .checklist-card {
+    gap: 1rem;
+  }
+
+  .checklist-card .icon-box {
+    padding: 1.2rem;
+  }
+
+  .checklist-card .icon-box img {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+
+  .pagination-list {
+    gap: 0.8rem;
   }
 }
 

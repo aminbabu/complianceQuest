@@ -4525,3 +4525,153 @@ aviation page
 .our-customers-use .metrics-list__item {
   flex: 0 0 calc(100% / 4 - 2rem);
 }
+
+/* ====================================
+=> checklist page
+==================================== */
+.checklists-and-templates .card {
+  background-color: var(--cq-white, #ffffff);
+  border: 0;
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+  box-shadow: 0px 4px 50px #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+
+.checklists-and-templates .card.checklist-query-card {
+  background-color: transparent;
+  margin-bottom: 3rem;
+  box-shadow: none;
+  max-width: 580px;
+  margin-inline: auto;
+}
+
+.checklist-query-card .checklist-query-group {
+  border: 1px solid var(--cq-light-gray, #d6d6d6);
+  border-radius: 50rem;
+  padding: 0.4rem 0.6rem;
+  display: flex;
+  align-items: center;
+  flex: 0 0 100%;
+}
+
+.checklist-query-card .form-control {
+  border-radius: 50rem 0 0 50rem;
+  background-color: transparent;
+  border: 0;
+}
+
+.checklist-query-card .query-btn {
+  flex-shrink: 0;
+  background-color: var(--cq-bright-orange, #f3703a);
+  color: var(--cq-white, #ffffff);
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.checklists-and-templates .checklist-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 4.8rem;
+}
+
+.checklists-and-templates .checklist-card {
+  gap: 1.6rem;
+}
+
+.checklist-card .icon-box {
+  flex-shrink: 0;
+  align-self: stretch;
+  background-color: #194275;
+  border-radius: 1.6rem;
+  padding: 1rem 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checklist-card .icon-box img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.checklist-card .title {
+  font-family: var(--font-circular-std);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+.checklist-card .title a {
+  color: #05203c;
+}
+
+.checklist-card .title a:hover {
+  color: #05203c;
+  opacity: 0.75;
+}
+
+.checklist-card .meta-info {
+  font-size: 1.4rem;
+  color: var(--cq-very-dark-gray-200, #484848);
+  margin-bottom: 0;
+}
+
+.pagination {
+  padding: 3.2rem;
+}
+
+.pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.pagination_page {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cq-light-gray, #d6d6d6);
+}
+
+.pagination_page.active,
+.pagination_page:hover {
+  background-color: var(--cq-light-gray, #d6d6d6);
+  color: var(--cq-very-dark-gray-100, #404040);
+}
+
+.pagination_prev,
+.pagination_next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination_prev *,
+.pagination_next * {
+  width: 4rem;
+  height: auto;
+}
+
+.pagination_prev:hover *,
+.pagination_next:hover * {
+  color: var(--cq-very-dark-gray-100, #404040);
+  fill: var(--cq-very-dark-gray-100, #404040);
+}
+
+.disabled {
+  pointer-events: none;
+}

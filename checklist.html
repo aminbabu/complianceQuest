@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<ript lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doc Management | Compliance Quest</title>
+    <title>Quality Management | Compliance Quest</title>
 
     <!-- font awesome -->
     <link
@@ -20,32 +20,9 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
     <link rel="stylesheet" href="./assets/css/app.res.css" />
   </head>
-  <body class="doc-management">
+  <body class="compliance-aviation">
     <!-- app starts -->
     <div id="app">
-      <!-- top notification bar starts -->
-      <section id="topNotificationBar" class="top-notification-bar">
-        <div class="container">
-          <p class="text-6">
-            <span class="text-5">The Platform Chronicles:</span>
-            10 Questions with Prashanth Rajendran, CEO, ComplianceQuest
-          </p>
-          <a
-            href="#"
-            class="cq-btn cq-btn-outline-white rounded-pill cq-arrow-btn"
-          >
-            <span class="icon">
-              <i class="fa-solid fa-angle-right"></i>
-            </span>
-            <span class="text">Explore Now</span>
-          </a>
-          <button id="closeBtn" class="close-btn">
-            <i class="fa-regular fa-circle-xmark"></i>
-          </button>
-        </div>
-      </section>
-      <!-- top notification bar ends -->
-
       <!-- header main starts -->
       <header id="headerMain" class="header-main">
         <nav class="navbar-main">
@@ -4220,7 +4197,6 @@
             <button id="navbarMenuBtn" class="navbar-menu-btn">
               <span></span><span></span><span></span>
             </button>
-
             <div id="headerSearchBox" class="header-search-box">
               <div class="container">
                 <div class="card">
@@ -8400,47 +8376,36 @@
       <!-- main sections starts -->
       <main id="mainSections" class="main-sections">
         <!-- hero starts -->
-        <section class="hero">
+        <section class="hero position-relative">
+          <div
+            class="bg-holder"
+            style="
+              background-image: url('./assets/images/checklist-hero-bg.png');
+              background-position: center bottom;
+            "
+          ></div>
+          <!--// bg-holder  -->
           <div class="container">
-            <div class="inner-content">
+            <div class="inner-content align-items-center">
               <div class="hero-content">
-                <h1 class="title-1">Document Management Solution</h1>
-                <div
-                  class="inner-img-sm"
-                  data-modal-target="docManagementModal"
-                >
+                <h1 class="title-1">
+                  Checklists and <br />
+                  Templates
+                </h1>
+                <div class="inner-img-sm">
                   <img
-                    src="./assets/images/doc-management-img.png"
-                    alt="Astronut"
+                    src="./assets/images/checklist-hero-img.png"
+                    alt=""
                     width="687"
                     height="687"
                     class="img-fluid"
                   />
                 </div>
-                <p class="text-2">
-                  Manage your critical documents at scale to drive productivity,
-                  safety and efficiency while ensuring compliance
-                </p>
-                <p class="text-4">
-                  Enable your workforce by managing your documents in a
-                  Controlled and versioned way
-                </p>
-                <a
-                  href="#"
-                  class="cq-btn cq-btn-primary rounded-pill cq-arrow-btn-lg"
-                >
-                  <span class="icon">
-                    <i class="fa-solid fa-angle-right"></i>
-                  </span>
-                  <span class="text">Request Demo</span>
-                </a>
+                <p class="text-4">ComplianceQuest Insights And Perspectives</p>
               </div>
-              <div
-                class="hero-img inner-img-lg"
-                data-modal-target="docManagementModal"
-              >
+              <div class="hero-img inner-img-lg">
                 <img
-                  src="./assets/images/doc-management-img.png"
+                  src="./assets/images/checklist-hero-img.png"
                   alt="Astronut"
                   width="687"
                   height="687"
@@ -8452,1037 +8417,640 @@
         </section>
         <!-- hero ends -->
 
-        <!-- cq document starts -->
-        <section class="cq-document">
+        <!-- checklist and templates starts -->
+        <section class="checklists-and-templates section">
           <div class="container">
-            <div class="content">
-              <h2 class="title-2">With CQ Document Management Solution</h2>
-              <p class="text-2">
-                you can manage the entire document lifecycle, gain complete
-                visibility and rely on a single source of truth across all
-                locations for more effective decision making.
-              </p>
-              <p class="text-4">
-                Regulatory compliance is stringent. With an electronic approach
-                to document management across the enterprise, you’ll have a
-                central repository to create, modify, review, approve, store,
-                organize, access and share documents globally in a controlled
-                manner. Track each document from origin to obsolescence with
-                analytics, graphical dashboards, integrated collaboration and
-                workflow tools.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- cq document ends -->
-
-        <!-- boost productivity starts -->
-        <section class="boost-productivity">
-          <div class="container">
-            <div
-              id="boostProductivitySplide"
-              class="splide boost-productivity-splide"
-              role="group"
-              aria-label="Splide browse solutions"
-            >
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide">
-                    <div class="flex">
-                      <div class="content">
-                        <h6 class="title-6">
-                          Boost Productivity and Efficiency
-                        </h6>
-                        <h6 class="title-6">
-                          Ensure Audit, Regulatory and Organizational Compliance
-                        </h6>
-                        <div class="inner-img-sm">
-                          <img
-                            src="./assets/images/ensure-audit-img.png"
-                            alt="Astronut"
-                            width="687"
-                            height="687"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-5">
-                          Transform your document management to satisfy quality
-                          and safety regulatory compliance, from ISO 9001, OSHA
-                          to GxP standards. Manage all the documents in your
-                          workflows, while integrating with other quality and
-                          safety processes critical to regulatory compliance,
-                          such as registration and surveillance audits, CAPA
-                          escalations, non-conformance, change control, safety
-                          observations, permit to work and customer complaints.
-                          Always be ‘audit ready,’ and ensure compliance to
-                          information security and regulatory guidelines such as
-                          multi-password access and digital signature, forced
-                          expiration of passwords, account and intruder lockout,
-                          and audit trail history/record archiving.
-                        </p>
-                        <h6 class="title-6">Improve Collaboration</h6>
-                        <h6 class="title-6">
-                          Keep Employee Training Up-to-Date
-                        </h6>
-                        <h6 class="title-6">Implement Best Practices</h6>
-                      </div>
-                      <div class="inner-img-lg">
-                        <img
-                          src="./assets/images/ensure-audit-img.png"
-                          alt="Astronut"
-                          width="687"
-                          height="687"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="flex">
-                      <div class="content">
-                        <h6 class="title-6">
-                          Boost Productivity and Efficiency
-                        </h6>
-                        <h6 class="title-6">
-                          Ensure Audit, Regulatory and Organizational Compliance
-                        </h6>
-                        <div class="inner-img-sm">
-                          <img
-                            src="./assets/images/ensure-audit-img.png"
-                            alt="Astronut"
-                            width="687"
-                            height="687"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-5">
-                          Transform your document management to satisfy quality
-                          and safety regulatory compliance, from ISO 9001, OSHA
-                          to GxP standards. Manage all the documents in your
-                          workflows, while integrating with other quality and
-                          safety processes critical to regulatory compliance,
-                          such as registration and surveillance audits, CAPA
-                          escalations, non-conformance, change control, safety
-                          observations, permit to work and customer complaints.
-                          Always be ‘audit ready,’ and ensure compliance to
-                          information security and regulatory guidelines such as
-                          multi-password access and digital signature, forced
-                          expiration of passwords, account and intruder lockout,
-                          and audit trail history/record archiving.
-                        </p>
-                        <h6 class="title-6">Improve Collaboration</h6>
-                        <h6 class="title-6">
-                          Keep Employee Training Up-to-Date
-                        </h6>
-                        <h6 class="title-6">Implement Best Practices</h6>
-                      </div>
-                      <div class="inner-img-lg">
-                        <img
-                          src="./assets/images/ensure-audit-img.png"
-                          alt="Astronut"
-                          width="687"
-                          height="687"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="flex">
-                      <div class="content">
-                        <h6 class="title-6">
-                          Boost Productivity and Efficiency
-                        </h6>
-                        <h6 class="title-6">
-                          Ensure Audit, Regulatory and Organizational Compliance
-                        </h6>
-                        <div class="inner-img-sm">
-                          <img
-                            src="./assets/images/ensure-audit-img.png"
-                            alt="Astronut"
-                            width="687"
-                            height="687"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-5">
-                          Transform your document management to satisfy quality
-                          and safety regulatory compliance, from ISO 9001, OSHA
-                          to GxP standards. Manage all the documents in your
-                          workflows, while integrating with other quality and
-                          safety processes critical to regulatory compliance,
-                          such as registration and surveillance audits, CAPA
-                          escalations, non-conformance, change control, safety
-                          observations, permit to work and customer complaints.
-                          Always be ‘audit ready,’ and ensure compliance to
-                          information security and regulatory guidelines such as
-                          multi-password access and digital signature, forced
-                          expiration of passwords, account and intruder lockout,
-                          and audit trail history/record archiving.
-                        </p>
-                        <h6 class="title-6">Improve Collaboration</h6>
-                        <h6 class="title-6">
-                          Keep Employee Training Up-to-Date
-                        </h6>
-                        <h6 class="title-6">Implement Best Practices</h6>
-                      </div>
-                      <div class="inner-img-lg">
-                        <img
-                          src="./assets/images/ensure-audit-img.png"
-                          alt="Astronut"
-                          width="687"
-                          height="687"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="flex">
-                      <div class="content">
-                        <h6 class="title-6">
-                          Boost Productivity and Efficiency
-                        </h6>
-                        <h6 class="title-6">
-                          Ensure Audit, Regulatory and Organizational Compliance
-                        </h6>
-                        <div class="inner-img-sm">
-                          <img
-                            src="./assets/images/ensure-audit-img.png"
-                            alt="Astronut"
-                            width="687"
-                            height="687"
-                            class="img-fluid"
-                          />
-                        </div>
-                        <p class="text-5">
-                          Transform your document management to satisfy quality
-                          and safety regulatory compliance, from ISO 9001, OSHA
-                          to GxP standards. Manage all the documents in your
-                          workflows, while integrating with other quality and
-                          safety processes critical to regulatory compliance,
-                          such as registration and surveillance audits, CAPA
-                          escalations, non-conformance, change control, safety
-                          observations, permit to work and customer complaints.
-                          Always be ‘audit ready,’ and ensure compliance to
-                          information security and regulatory guidelines such as
-                          multi-password access and digital signature, forced
-                          expiration of passwords, account and intruder lockout,
-                          and audit trail history/record archiving.
-                        </p>
-                        <h6 class="title-6">Improve Collaboration</h6>
-                        <h6 class="title-6">
-                          Keep Employee Training Up-to-Date
-                        </h6>
-                        <h6 class="title-6">Implement Best Practices</h6>
-                      </div>
-                      <div class="inner-img-lg">
-                        <img
-                          src="./assets/images/ensure-audit-img.png"
-                          alt="Astronut"
-                          width="687"
-                          height="687"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="splide__arrows">
-                <button class="splide__arrow splide__arrow--prev">
-                  <svg
-                    style="rotate: 180deg"
-                    width="39"
-                    height="14"
-                    viewBox="0 0 39 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M38.3359 7.80395H3.40389L8.44743 12.8632L7.31417 14L0.335938 7L7.31417 0L8.44743 1.13679L3.40389 6.19605H38.3359V7.80395Z"
-                      fill="#D6D6D6"
-                    />
-                  </svg>
-                </button>
-                <button class="splide__arrow splide__arrow--next">
-                  <svg
-                    style="rotate: 180deg"
-                    width="39"
-                    height="14"
-                    viewBox="0 0 39 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M38.3359 7.80395H3.40389L8.44743 12.8632L7.31417 14L0.335938 7L7.31417 0L8.44743 1.13679L3.40389 6.19605H38.3359V7.80395Z"
-                      fill="#D6D6D6"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- boost productivity ends -->
-
-        <!-- support organization starts -->
-        <section class="support-organization">
-          <div class="container">
-            <div class="flex">
-              <div class="content">
-                <h2 class="title-2">Support Your Entire Organization</h2>
-              </div>
-              <ul class="support-list reboot-list">
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-1.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">HR and Training Managers</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs. Rely on
-                      secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-2.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">Document Creators (Owners)</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-3.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">Document Coordinators</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-4.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">HR and Training Managers</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-1.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">HR and Training Managers</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-2.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">Document Creators (Owners)</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-3.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">Document Coordinators</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-4.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">HR and Training Managers</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-1.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">HR and Training Managers</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-2.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">Document Creators (Owners)</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-3.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">Document Coordinators</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-                <li class="support__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/support-icon-4.png"
-                      alt=""
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <p class="text-5">HR and Training Managers</p>
-                  <div class="backdrop-content">
-                    <p class="text-6">
-                      Rely on secure, scalable, cloud-based technologies for all
-                      document control, compliance and management needs.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- support organization ends -->
-
-        <!-- say about us starts -->
-        <section class="say-about-us">
-          <div class="container">
-            <div class="content">
-              <h2 class="title-2">What They Say About Us</h2>
-              <div
-                id="sayAboutUsSplide"
-                class="splide say-about-us-splide"
-                role="group"
-                aria-label="Splide Basic HTML Example"
-              >
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <div class="say-about-us__item">
-                        <p class="text-4 quote-text">
-                          We’re no longer chasing folks down to update and
-                          approve our docs, or be sure we have the latest
-                          process specs distributed across the org. With
-                          ComplianceQuest, everyone’s on the same page all the
-                          time. We’re confident that everyone gets updated when
-                          they should, and that our team is fully trained any
-                          time any operating requirements or instructions get
-                          changed.
-                        </p>
-                        <p class="text-4 author">VP Quality</p>
-                        <p class="text-5 ref">Global Company</p>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="say-about-us__item">
-                        <p class="text-4 quote-text">
-                          Lorem ipsum, dolor sit amet consectetur adipisicing
-                          elit. Sequi maiores eius sapiente id quos dolorum
-                          maxime blanditiis reiciendis itaque quibusdam
-                          doloribus a numquam voluptas, tempora modi porro
-                          deleniti quia aliquam, ad non dicta consectetur
-                          corporis nesciunt! Corporis illum facere, officiis
-                          minus ipsam odit. Inventore, exercitationem ad ipsam
-                          eius rem, hic alias officiis facilis totam quo labore
-                          asperiores consectetur quia? Labori
-                        </p>
-                        <p class="text-4 author">VP Quality</p>
-                        <p class="text-5 ref">Global Company</p>
-                      </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="say-about-us__item">
-                        <p class="text-4 quote-text">
-                          We’re no longer chasing folks down to update and
-                          approve our docs, or be sure we have the latest
-                          process specs distributed across the org. With
-                          ComplianceQuest, everyone’s on the same page all the
-                          time. We’re confident that everyone gets updated when
-                          they should, and that our team is fully trained any
-                          time any operating requirements or instructions get
-                          changed.
-                        </p>
-                        <p class="text-4 author">VP Quality</p>
-                        <p class="text-5 ref">Global Company</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="splide__arrows cq-arrows">
-                  <button class="splide__arrow splide__arrow--prev">
-                    <svg
-                      style="rotate: 180deg"
-                      width="39"
-                      height="14"
-                      viewBox="0 0 39 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M38.3359 7.80395H3.40389L8.44743 12.8632L7.31417 14L0.335938 7L7.31417 0L8.44743 1.13679L3.40389 6.19605H38.3359V7.80395Z"
-                        fill="#D6D6D6"
-                      />
-                    </svg>
-                  </button>
-                  <button class="splide__arrow splide__arrow--next">
-                    <svg
-                      style="rotate: 180deg"
-                      width="39"
-                      height="14"
-                      viewBox="0 0 39 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M38.3359 7.80395H3.40389L8.44743 12.8632L7.31417 14L0.335938 7L7.31417 0L8.44743 1.13679L3.40389 6.19605H38.3359V7.80395Z"
-                        fill="#D6D6D6"
-                      />
-                    </svg>
+            <div class="card checklist-query-card">
+                <div class="checklist-query-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search for Checklists & Templates"
+                  />
+                  <button type="submit" class="query-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </div>
-              </div>
             </div>
-          </div>
-        </section>
-        <!-- say about us ends -->
-
-        <!-- key cq solution starts -->
-        <section class="key-cq-solution">
-          <div class="container">
-            <h2 class="title-2">
-              Key CQ Document Management Solution Features
-            </h2>
-            <div class="inner-img-lg img-wrapper">
-              <img
-                src="./assets/images/key-cq-doc-img.png"
-                alt=""
-                width="687"
-                height="687"
-                class="img-fluid"
-              />
-            </div>
-
-            <div class="key-cq-content">
-              <ul class="key-cq-list">
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-1.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Release Management</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-2.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Document-based Training</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-3.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Integrated Change</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-3.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Integrated Change</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-4.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">AI Powered Search</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-5.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Mobile Access</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-6.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">
-                      Enterprise Grade Security
-                    </p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-7.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Centralized Database</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-8.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Revision/Review</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-9.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Workflow</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-9.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Workflow</p>
-                  </div>
-                </li>
-                <li class="key-cq__item">
-                  <span class="icon">
-                    <img
-                      src="./assets/images/icons/key-cq-10.png"
-                      alt="key"
-                      width="40"
-                      height="40"
-                      class="img-fluid"
-                    />
-                  </span>
-                  <div class="key-content">
-                    <p class="text-5 key-cq__title">Collabration</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- key cq solution ends -->
-
-        <!-- Start Ai power main area -->
-        <section class="ai_power_main_area">
-          <div class="container">
-            <div class="fancy-header">
-              <p class="text-4">
-                Learn more about how CQ Document Management Solution can power
-                Workforce Digitalization.
-              </p>
-            </div>
-
-            <div class="ai_power_content_area">
-              <!-- power single items -->
-              <div class="power_left_area">
-                <div class="power_images">
+            <ul class="reboot-list checklist-items">
+              <li class="card checklist-card">
+                <div class="icon-box">
                   <img
-                    src="assets/images/datasheet-img.png"
+                    src="./assets/images/checklist-icons/checklist-icon-2.png"
                     alt=""
-                    width="406"
-                    height="256"
+                    width="80"
+                    height="80"
                     class="img-fluid"
                   />
                 </div>
-              </div>
-              <!-- power single items -->
-              <div class="power_right_items">
-                <div class="section_heading">
-                  <h3 class="title-3">
-                    Document Management Solution Datasheet
-                  </h3>
-                  <a
-                    href="#"
-                    class="cq-btn cq-btn-outline-primary rounded-pill cq-arrow-btn-lg"
-                  >
-                    <span class="icon">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M15.2 9.6C14.9878 9.6 14.7843 9.68429 14.6343 9.83432C14.4843 9.98434 14.4 10.1878 14.4 10.4V13.6C14.4 13.8122 14.3157 14.0157 14.1657 14.1657C14.0157 14.3157 13.8122 14.4 13.6 14.4H2.4C2.18783 14.4 1.98434 14.3157 1.83431 14.1657C1.68429 14.0157 1.6 13.8122 1.6 13.6V10.4C1.6 10.1878 1.51571 9.98434 1.36569 9.83432C1.21566 9.68429 1.01217 9.6 0.8 9.6C0.587827 9.6 0.384344 9.68429 0.234315 9.83432C0.0842854 9.98434 0 10.1878 0 10.4V13.6C0 14.2365 0.252856 14.847 0.702944 15.2971C1.15303 15.7471 1.76348 16 2.4 16H13.6C14.2365 16 14.847 15.7471 15.2971 15.2971C15.7471 14.847 16 14.2365 16 13.6V10.4C16 10.1878 15.9157 9.98434 15.7657 9.83432C15.6157 9.68429 15.4122 9.6 15.2 9.6ZM7.432 10.968C7.50808 11.0408 7.5978 11.0979 7.696 11.136C7.79176 11.1783 7.8953 11.2002 8 11.2002C8.1047 11.2002 8.20824 11.1783 8.304 11.136C8.4022 11.0979 8.49192 11.0408 8.568 10.968L11.768 7.768C11.9186 7.61736 12.0033 7.41304 12.0033 7.2C12.0033 6.98696 11.9186 6.78264 11.768 6.632C11.6174 6.48136 11.413 6.39673 11.2 6.39673C10.987 6.39673 10.7826 6.48136 10.632 6.632L8.8 8.472V0.8C8.8 0.587827 8.71571 0.384344 8.56569 0.234315C8.41566 0.0842854 8.21217 0 8 0C7.78783 0 7.58434 0.0842854 7.43431 0.234315C7.28429 0.384344 7.2 0.587827 7.2 0.8V8.472L5.368 6.632C5.29341 6.55741 5.20486 6.49824 5.1074 6.45787C5.00994 6.4175 4.90549 6.39673 4.8 6.39673C4.69451 6.39673 4.59006 6.4175 4.4926 6.45787C4.39514 6.49824 4.30659 6.55741 4.232 6.632C4.15741 6.70659 4.09824 6.79514 4.05787 6.8926C4.0175 6.99006 3.99673 7.09451 3.99673 7.2C3.99673 7.30549 4.0175 7.40994 4.05787 7.5074C4.09824 7.60486 4.15741 7.69341 4.232 7.768L7.432 10.968Z"
-                          fill="white"
-                        />
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#">
+                      A Checklist to Support in Hazard Identification Process
+                      Related to OH&S (Part A)
+                    </a>
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-3.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#">
+                      A Checklist to Support in Hazard Identification Process
+                      Related to OH&S (Part B)
+                    </a>
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-4.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#">
+                      A Checklist on Occupational Health & Safety Objectives and
+                      Planning
+                    </a>
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-5.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#">
+                      Evaluate the Contents of Your Occupational Health & Safety
+                      (OH&S) Policy
+                    </a>
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-6.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >Safety Audit Checklist for Your Emergency Response</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-7.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#">
+                      Is Your Racking and Material Storage Done Right? Here’s a
+                      Safety Audit Checklist
+                    </a>
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-8.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-9.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-9.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-10.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-11.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-12.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-13.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-14.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-15.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-16.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-17.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-18.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-19.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-20.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-21.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-22.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-23.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-24.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-25.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-26.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-27.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-28.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-29.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+              <li class="card checklist-card">
+                <div class="icon-box">
+                  <img
+                    src="./assets/images/checklist-icons/checklist-icon-30.png"
+                    alt=""
+                    width="80"
+                    height="80"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="desc">
+                  <h6 class="title">
+                    <a href="#"
+                      >How to Eliminate Hazards and Reduce OH&S Risk</a
+                    >
+                  </h6>
+                  <p class="meta-info">Checklist | September, 2022</p>
+                </div>
+              </li>
+            </ul>
+            <div class="pagination">
+              <ul class="pagination-list reboot-list">
+                <li>
+                  <a href="#" class="pagination_prev">
+                    <svg width="38" height="14" viewBox="0 0 38 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M38 7.80395H3.06796L8.11149 12.8632L6.97824 14L0 7L6.97824 0L8.11149 1.13679L3.06796 6.19605H38V7.80395Z" fill="#D6D6D6"/>
+                      </svg>                      
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="pagination_page active"> 1 </a>
+                </li>
+                <li>
+                  <a href="#" class="pagination_page"> 2 </a>
+                </li>
+                <li>
+                  <a href="#" class="pagination_page"> 3 </a>
+                </li>
+                <li>
+                  <a href="#" class="pagination_page"> 4 </a>
+                </li>
+                <li>
+                  <a href="#" class="pagination_page"> 5 </a>
+                </li>
+                <li>
+                  <a href="#" class="pagination_page disabled">
+                    &middot;&middot;&middot;
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="pagination_next">
+                    <svg width="38" height="14" viewBox="0 0 38 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 7.80395H34.932L29.8885 12.8632L31.0218 14L38 7L31.0218 0L29.8885 1.13679L34.932 6.19605H0V7.80395Z" fill="#D6D6D6"/>
                       </svg>
-                    </span>
-                    <span class="text">Download Datasheet</span>
+                      
                   </a>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
-        <!-- End Ai power main area -->
-
-        <!-- related insights starts -->
-        <section class="realted-insights">
-          <div
-            class="bg-holder bg-holder-sm"
-            style="background-image: url('./assets/images/insight-bg.png')"
-          ></div>
-          <!--// bg-holder  -->
-          <div class="container">
-            <div class="astronut-icon">
-              <img
-                src="./assets/images/astronut.png"
-                alt="Astronut"
-                width="160"
-                height="92"
-                class="img-fluid"
-              />
-            </div>
-            <h2 class="title-1">Related Insights</h2>
-            <div class="inner-content">
-              <div class="featured-insight">
-                <div
-                  class="bg-holder bg-holder-lg"
-                  style="
-                    background-image: url('./assets/images/insight-bg.png');
-                  "
-                ></div>
-                <!--// bg-holder  -->
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="./assets/images/insight-1.png"
-                      alt="Seamless Integration of CQ EHS with ENHESA for Improved Safety Compliance"
-                      width="540"
-                      height="259"
-                      class="img-fluid featured-img"
-                    />
-                  </div>
-                  <div class="meta-data text-5">
-                    <a href="#" class="category">Blog</a>
-                    |
-                    <a href="#" class="date">Jul, 2022</a>
-                  </div>
-                  <div class="insight-details">
-                    <h4 class="title-5">
-                      <a href="#">
-                        Seamless Integration of CQ EHS with ENHESA for Improved
-                        Safety Compliance
-                      </a>
-                    </h4>
-                    <p class="text-4">
-                      EHS regulations are constantly being fine-tuned to keep
-                      pace with newer risks and hazards related to overall
-                      workplace safety and employee well-being requirements.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="insight-content">
-                <ul class="insight-list reboot-list">
-                  <li class="insight-list__item">
-                    <div class="card">
-                      <div class="card-img">
-                        <img
-                          src="./assets/images/insight-2.png"
-                          alt="Automating the RTM (Requirements Traceability Matrix) Process"
-                          width="170"
-                          height="140"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="desc">
-                        <div class="meta-data text-5">
-                          <a href="#" class="category">New</a>
-                          |
-                          <a href="#" class="date">Jul 21, 2022</a>
-                        </div>
-                        <div class="insight-details">
-                          <h4 class="title-6">
-                            <a href="#">
-                              Automating the RTM (Requirements Traceability
-                              Matrix) Process
-                            </a>
-                          </h4>
-                          <p class="text-5">
-                            Across industries – including medical devices and
-                            manufacturing – it is highly
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="insight-list__item">
-                    <div class="card">
-                      <div class="card-img">
-                        <img
-                          src="./assets/images/insight-3.png"
-                          alt="Why Quality has become a key part of the Executive Agenda"
-                          width="170"
-                          height="140"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="desc">
-                        <div class="meta-data text-5">
-                          <a href="#" class="category">Insights</a>
-                          |
-                          <a href="#" class="date">Jul 16, 2021</a>
-                        </div>
-                        <div class="insight-details">
-                          <h4 class="title-6">
-                            <a href="#">
-                              Why Quality has become a key part of the Executive
-                              Agenda
-                            </a>
-                          </h4>
-                          <p class="text-5">
-                            In 2019, Boston Consulting Group published an
-                            article titled “Serious About Quality? Then
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="insight-list__item">
-                    <div class="card">
-                      <div class="card-img">
-                        <img
-                          src="./assets/images/insight-4.png"
-                          alt="CQ’s Design Controls Solution: A Big Step Forward"
-                          width="170"
-                          height="140"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="desc">
-                        <div class="meta-data text-5">
-                          <a href="#" class="category">Events</a>
-                          |
-                          <a href="#" class="date">Jul 16, 2021</a>
-                        </div>
-                        <div class="insight-details">
-                          <h4 class="title-6">
-                            <a href="#">
-                              CQ’s Design Controls Solution: A Big Step Forward
-                            </a>
-                          </h4>
-                          <p class="text-5">
-                            We’re excited to announce the launch of the
-                            cloud-based Product Design Management
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="button-wrapper">
-                  <a
-                    href="#"
-                    class="cq-btn cq-btn-primary rounded-pill cq-arrow-btn-lg"
-                  >
-                    <span class="icon">
-                      <i class="fa-solid fa-angle-right"></i>
-                    </span>
-                    <span class="text">View All Resources</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- related insights ends -->
+        <!-- checklist and templates ends -->
       </main>
       <!-- main sections ends -->
 
@@ -9799,29 +9367,6 @@
       <!-- footer main ends -->
     </div>
     <!-- app ends -->
-
-    <!-- extra elems starts -->
-    <div class="extra-elems">
-      <!-- doc management modal starts -->
-      <div id="docManagementModal" class="modal doc-management-modal">
-        <div class="modal-dialog modal-dialog-lg">
-          <div class="modal-content">
-            <button type="button" class="close-modal"></button>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img
-                  src="./assets/images/modal-img.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- doc management modal ends -->
-    </div>
-    <!-- extra elems ends -->
 
     <!-- splide js -->
     <script src="./vendor/splide-js/js/splide.min.js"></script>
