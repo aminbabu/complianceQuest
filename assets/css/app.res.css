@@ -305,6 +305,13 @@
   .cq-quality-management .flex > * {
     flex: 0 0 calc(100% / 2 - 2.4rem);
   }
+
+  /* ===================================
+  => posts page
+  ==================================== */
+  .resources-list__item .resources-list__item-desc {
+    padding: 2rem 1.6rem;
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -1324,6 +1331,23 @@
     width: 6.4rem;
     height: 6.4rem;
   }
+
+  /* ==========================
+  => posts page
+  =========================== */
+  .our-resources .fitler-utils {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .our-resources .reload-btn,
+  .our-resources .filter-btn {
+    order: 1;
+  }
+
+  .resources-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -1911,6 +1935,24 @@
     width: 8rem;
     height: 8rem;
   }
+
+  /* ===========================
+  => blog page
+  =========================== */
+  .our-resources .filter-util__items {
+    flex-wrap: wrap;
+    gap: 1.6rem;
+  }
+
+  .our-resources .filter__item {
+    flex: 0 0 calc(100% / 2 - 1.6rem);
+  }
+
+  .our-resources .form-control,
+  .our-resources .form-select {
+    border-radius: 50rem !important;
+    border: 1px solid var(--cq-light-gray, #d6d6d6) !important;
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -2263,6 +2305,17 @@
 
   .pagination-list {
     gap: 0.8rem;
+  }
+
+  /* ===========================
+  => blog page
+  =========================== */
+  .our-resources .filter__item {
+    flex: 0 0 100%;
+  }
+
+  .resources-list {
+    grid-template-columns: 1fr;
   }
 }
 
