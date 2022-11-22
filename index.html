@@ -10145,7 +10145,7 @@
                         <div class="testimonial__item empty-block"></div>
                       </li>
                       <li class="splide__slide">
-                        <div class="testimonial__item">
+                        <div class="testimonial__item" style="padding: 0">
                           <img
                             src="./assets/images/client-testimonial.png"
                             alt="client"
@@ -10153,6 +10153,19 @@
                             height="260"
                             class="ent-img img-fluid"
                           />
+                          <a
+                            href="#testimonialRefModal"
+                            class="play-icon"
+                            data-modal-target="testimonialRefModal"
+                          >
+                            <img
+                              src="./assets/images/icons/play-icon.png"
+                              alt="Play"
+                              width="24"
+                              height="24"
+                              class="img-fluid"
+                            />
+                          </a>
                         </div>
                       </li>
                       <li class="splide__slide">
@@ -11451,6 +11464,36 @@
         </div>
       </div>
       <!-- audit management modal ends -->
+
+      <!-- testimonial ref modal starts -->
+      <div id="testimonialRefModal" class="modal new-colleague-modal">
+        <div class="modal-dialog modal-dialog-lg">
+          <div class="modal-content">
+            <button type="button" class="close-modal"></button>
+            <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                <div style="padding: 56.25% 0 0 0; position: relative">
+                  <iframe
+                    src="https://player.vimeo.com/video/708934343?h=0a9449051d&title=0&byline=0&portrait=0"
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                    "
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- testimonial ref modal ends -->
 
       <!-- audit management modal starts -->
       <div id="newColleagueModal" class="modal new-colleague-modal">

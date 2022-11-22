@@ -1229,6 +1229,7 @@
 
   .capabilities-list__item .icon img {
     width: 4.8rem;
+    height: 4.8rem;
   }
 
   /* benefit_main_area */
@@ -1849,6 +1850,7 @@
 
   .capabilities-list__item .icon img {
     width: 3.6rem;
+    height: 3.6rem;
   }
 
   /* benefit_main_area */
@@ -2098,6 +2100,10 @@
     padding: 1.6rem;
   }
 
+  .splide__slide:has(> .empty__block) {
+    display: none;
+  }
+
   /* connect cq */
   .connect-cq {
     overflow: hidden;
@@ -2229,6 +2235,7 @@
 
   .capabilities-list__item .icon img {
     width: 3.2rem;
+    height: 3.2rem;
   }
 
   /* trusted-world-area */

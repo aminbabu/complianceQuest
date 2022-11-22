@@ -375,6 +375,24 @@ GLOB.inittabs = function () {
   links.forEach(handleClick);
 };
 
+// extend backdrop dynamic height
+GLOB.extentHeight = function () {
+  const backdropElems = Array.from(
+    document.querySelectorAll(".support__item .backdrop-content")
+  );
+  const charLimit = 145;
+
+  backdropElems.forEach(function (backdrop) {
+    const content = backdrop.textContent.trim();
+
+    if (content.length >= charLimit)
+      backdrop.style.minHeight = `calc(200% + 2.1rem)`;
+
+    if (content.length >= charLimit * 2)
+      backdrop.style.minHeight = `calc(300% + 2.1rem)`;
+  });
+};
+
 // document on load
 document.addEventListener("DOMContentLoaded", function () {
   // toggle menu
@@ -401,6 +419,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rewind: true,
       pagination: false,
       arrows: false,
+      drag: false,
       breakpoints: {
         1199: {
           arrows: true,
@@ -417,6 +436,7 @@ document.addEventListener("DOMContentLoaded", function () {
       focus: "center",
       isNavigation: true,
       padding: { left: "4rem", right: "4rem" },
+      drag: false,
       breakpoints: {
         1199: {
           fixedWidth: 136,
@@ -464,6 +484,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     autoplay: true,
     interval: 6000,
+    drag: false,
   });
   // client testimonial slider
   GLOB.initSplide("#clientTestimonialSplide1", {
@@ -473,6 +494,7 @@ document.addEventListener("DOMContentLoaded", function () {
     height: 800,
     gap: 24,
     autoHeight: true,
+    drag: false,
     breakpoints: {
       575: {
         height: 700,
@@ -486,6 +508,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: 24,
     height: 800,
     autoHeight: true,
+    drag: false,
     breakpoints: {
       575: {
         height: 700,
@@ -498,6 +521,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     autoplay: true,
     interval: 6000,
+    drag: false,
   });
   // type writer
   GLOB.createTypeWriter();
@@ -528,6 +552,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+  GLOB.extentHeight();
 
   /*****************************************
    * Compliance EHS Page
