@@ -393,8 +393,62 @@ GLOB.extentHeight = function () {
   });
 };
 
+// circular progress bar
+GLOB.initProgressBar = function (sign) {
+  // Get all the Meters
+  const meters = document.querySelectorAll("svg[data-value] .meter");
+
+  if (!meters.length) return;
+
+  meters.forEach((path) => {
+    // Get the length of the path
+    let length = path.getTotalLength();
+    // Get the value of the meter
+    let value = parseInt(path.parentNode.getAttribute("data-value"));
+    // Calculate the percentage of the total length
+    let to = length * ((100 - value) / 100);
+    // Trigger Layout in Safari hack https://jakearchibald.com/2013/animated-line-drawing-svg/
+    path.getBoundingClientRect();
+    // Set the Offset
+    path.style.strokeDashoffset = Math.max(0, to);
+    path.nextElementSibling.textContent = `${sign}${value}%`;
+  });
+};
+
+// toggle collapse
+GLOB.collapseToggler = function () {
+  const triggers = Array.from(
+    document.querySelectorAll("[data-collapse-target]")
+  );
+  const collapsableElems = Array.from(
+    document.querySelectorAll(".collapsable-elem")
+  );
+
+  function toggler(trigger) {
+    trigger.addEventListener("click", function () {
+      const id = this.dataset.collapseTarget;
+      const target = document.getElementById(id);
+
+      if (!target.classList.contains("show")) {
+        collapsableElems.forEach(function (el) {
+          el.classList.remove("show");
+        });
+        target.classList.add("show");
+      } else {
+        target.classList.remove("show");
+      }
+    });
+  }
+
+  triggers.forEach(toggler);
+};
+
 // document on load
 document.addEventListener("DOMContentLoaded", function () {
+  // toggle collapse
+  GLOB.collapseToggler();
+  // progressive circular animation
+  GLOB.initProgressBar("-");
   // toggle menu
   GLOB.toggleMenu();
   // sticky header
@@ -488,30 +542,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // client testimonial slider
   GLOB.initSplide("#clientTestimonialSplide1", {
+    type: "loop",
     pagination: false,
     arrows: false,
     direction: "ttb",
-    height: 800,
+    height: 810,
     gap: 24,
     autoHeight: true,
-    drag: false,
+    autoplay: true,
+    interval: 2000,
+    speed: 1000,
     breakpoints: {
       575: {
-        height: 700,
+        height: 672,
       },
     },
   });
   GLOB.initSplide("#clientTestimonialSplide2", {
+    type: "loop",
     pagination: false,
     arrows: false,
     direction: "ttb",
     gap: 24,
-    height: 800,
+    height: 810,
     autoHeight: true,
-    drag: false,
+    autoplay: true,
+    interval: 2000,
+    speed: 1200,
     breakpoints: {
       575: {
-        height: 700,
+        height: 672,
       },
     },
   });

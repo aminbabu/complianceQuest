@@ -84,6 +84,12 @@
     padding-bottom: 125px;
     padding-top: 100px;
   }
+
+  /* circular progress bar */
+  .svg-circle {
+    width: 96px;
+    height: 96px;
+  }
 }
 
 @media all and (max-width: 1199px) {
@@ -311,6 +317,12 @@
   ==================================== */
   .resources-list__item .resources-list__item-desc {
     padding: 2rem 1.6rem;
+  }
+
+  /* circular progress bar */
+  .svg-circle {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -1349,6 +1361,25 @@
   .resources-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* circular progress bar */
+  .svg-circle {
+    width: 116px;
+    height: 116px;
+  }
+
+  .hero-home .circular-progress:nth-of-type(1) {
+    top: 26%;
+    left: auto;
+    right: 0;
+    translate: -75% 0;
+  }
+
+  .hero-home .circular-progress:nth-of-type(2) {
+    bottom: auto;
+    top: 55%;
+    translate: 125% 0;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -1955,6 +1986,25 @@
     border-radius: 50rem !important;
     border: 1px solid var(--cq-light-gray, #d6d6d6) !important;
   }
+
+  /* circular progress bar */
+  .svg-circle {
+    width: 96px;
+    height: 96px;
+  }
+
+  .hero-home .circular-progress:nth-of-type(1) {
+    translate: -50% 0;
+  }
+
+  .hero-home .circular-progress:nth-of-type(2) {
+    translate: 100% 0;
+  }
+
+  /* collapse */
+  .widget_collapse {
+    gap: 5%;
+  }
 }
 
 @media all and (max-width: 575px) {
@@ -2324,6 +2374,30 @@
   .resources-list {
     grid-template-columns: 1fr;
   }
+
+  /* circular progress bar */
+  .svg-circle {
+    width: 86px;
+    height: 86px;
+  }
+
+  .hero-home .circular-progress:nth-of-type(1) {
+    translate: none;
+  }
+
+  .hero-home .circular-progress:nth-of-type(2) {
+    translate: 55% 0;
+  }
+
+  /* collapse */
+  .widget_collapse {
+    gap: 3.2rem 5%;
+    grid-template-columns: 1fr;
+  }
+
+  .widget_collapse .widget_flex {
+    gap: 3.2rem;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -2353,5 +2427,15 @@
   .cq-list-group::after {
     height: 78.5%;
     translate: 0 -51%;
+  }
+
+  /* circular progress bar */
+  .svg-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .hero-home .circular-progress:nth-of-type(2) {
+    translate: 50% 0;
   }
 }
