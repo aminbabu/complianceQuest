@@ -670,15 +670,14 @@ textarea.form-control {
 .header-main {
   transition: 300ms ease;
   background: var(--cq-mostly-white-300, #f7f7f7);
-  position: relative;
+  position: fixed;
   z-index: 99999999;
+  top: 0;
+  width: 100%;
 }
 
 .header-main.sticky {
   box-shadow: 0 0.5rem 1.6rem 0 rgb(0 0 0 / 0.12);
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .header-search-box {
@@ -824,6 +823,11 @@ textarea.form-control {
   color: var(--cq-very-dark-gray-200, #484848);
 }
 
+/* main sections */
+.main-sections {
+  padding-top: 8.6rem;
+}
+
 /* hero home */
 .hero-home {
   padding-top: 20rem;
@@ -846,6 +850,8 @@ textarea.form-control {
 
 .hero-home .hero-content {
   flex: 0 0 45%;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-home .hero-content .text-4 {
@@ -1621,8 +1627,8 @@ textarea.form-control {
 
 /* new colleague */
 .new-colleague {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
   position: relative;
 }
 
@@ -1810,8 +1816,8 @@ textarea.form-control {
 
 /* connect cq */
 .connect-cq {
-  padding-top: 13rem;
-  padding-bottom: 6rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
   background: linear-gradient(180deg, #f7f7f7 0%, rgba(255, 255, 255, 0) 100%);
   position: relative;
 }
@@ -1934,8 +1940,8 @@ textarea.form-control {
 
 /* footer-landmark */
 .footer-landmark {
-  padding-top: 13rem;
-  padding-bottom: 13rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
   position: relative;
   text-align: center;
 }
@@ -2066,7 +2072,6 @@ textarea.form-control {
 .hero .inner-content {
   display: flex;
   gap: 3.2rem;
-  padding-top: 6.4rem;
   padding-bottom: 6.4rem;
 }
 
@@ -2094,7 +2099,6 @@ textarea.form-control {
 /* cq document */
 .cq-document {
   padding-top: 7.6rem;
-  padding-bottom: 7.6rem;
 }
 
 .cq-document .content {
@@ -2284,7 +2288,7 @@ textarea.form-control {
 
 /*start power content area css*/
 .ai_power_main_area {
-  padding: 6.8rem 0 12.8rem;
+  padding-bottom: 12rem;
   position: relative;
 }
 
@@ -2549,8 +2553,8 @@ textarea.form-control {
 
 /* faq area */
 .faq-area {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .faq-area .title-2 {
@@ -2678,11 +2682,6 @@ textarea.form-control {
 }
 
 /* audit management */
-.audit-management {
-  padding-top: 6.4rem;
-  padding-bottom: 6.4rem;
-}
-
 .bg-bubble {
   position: relative;
 }
@@ -2772,8 +2771,8 @@ textarea.form-control {
 
 /* related assets */
 .related-assets {
-  padding-top: 9rem;
-  padding-bottom: 13rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
   position: relative;
 }
 
@@ -2887,8 +2886,8 @@ textarea.form-control {
 
 /* benefits of audit */
 .benefits-of-audit {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .benefits-of-audit .title-2 {
@@ -3175,8 +3174,8 @@ textarea.form-control {
 
 /* cq features*/
 .cq-features {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .cq-features .section-header {
@@ -3270,8 +3269,7 @@ textarea.form-control {
 
 /* cloud technology */
 .cloud-technology {
-  padding-top: 6.4rem;
-  padding-bottom: 15rem;
+  padding-bottom: 14rem;
   position: relative;
 }
 
@@ -3302,8 +3300,8 @@ textarea.form-control {
 
 /* cq capabilities */
 .cq-capabilities {
-  padding-top: 6.4rem;
-  padding-bottom: 6.4rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .cq-capabilities .flex {
@@ -3385,11 +3383,6 @@ textarea.form-control {
 }
 
 /* audit phase */
-.audit-phase {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
 .audit-phase .section-header {
   max-width: 84rem;
   margin-left: auto;
@@ -3456,7 +3449,7 @@ textarea.form-control {
 
 /* qms software */
 .qms-software {
-  padding-top: 9rem;
+  padding-top: 12rem;
   padding-bottom: 20rem;
   position: relative;
 }
@@ -3475,8 +3468,8 @@ textarea.form-control {
 
 /* organization growth */
 .organization-growth {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .organization-growth .flex {
@@ -3531,11 +3524,6 @@ textarea.form-control {
 }
 
 /* related checklist */
-.related-checklist {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
 .related-checklist .checklist {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -3633,8 +3621,8 @@ textarea.form-control {
 
 /* quality centric */
 .quality-centric {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .quality-centric .title-2 {
@@ -4912,8 +4900,15 @@ aviation page
   font-weight: 900;
 }
 
-.svg-circle .text-sm {
-  font-weight: 400;
+.circular-progress .text {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  translate: -50% 0;
+  width: 85%;
+  text-align: center;
+  line-height: 1.1;
 }
 
 .hero-home .circular-progress {
@@ -4979,4 +4974,14 @@ aviation page
 
 .collapsable-elem.show {
   max-height: 100%;
+}
+
+.cq-list-arrow .cq-list__item::before {
+  content: "";
+  background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L12 6.00879L0.00585938 12L2.58984 6.00293L0 0Z" fill="%23D6D6D6"/></svg>');
+  width: 1.6rem;
+  height: 1.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

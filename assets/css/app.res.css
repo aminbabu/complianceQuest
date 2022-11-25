@@ -90,6 +90,10 @@
     width: 96px;
     height: 96px;
   }
+
+  .circular-progress .text {
+    font-size: 1.3rem;
+  }
 }
 
 @media all and (max-width: 1199px) {
@@ -321,8 +325,12 @@
 
   /* circular progress bar */
   .svg-circle {
-    width: 80px;
-    height: 80px;
+    width: 86px;
+    height: 86px;
+  }
+
+  .circular-progress .text {
+    font-size: 1.2rem;
   }
 }
 
@@ -620,8 +628,8 @@
 
   /* new colleague */
   .new-colleague {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .new-colleague .flex {
@@ -768,6 +776,11 @@
   }
 
   /* connect cq */
+  .connect-cq {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .connect-cq .flex {
     flex-wrap: wrap;
   }
@@ -792,7 +805,7 @@
 
   /* footer landmark */
   .footer-landmark {
-    padding-top: 9rem;
+    padding-block: 10rem;
   }
 
   /* footer widgets */
@@ -917,6 +930,11 @@
   }
 
   /* ai power */
+  .ai_power_main_area {
+    padding-bottom: 10rem;
+  }
+
+  /* ai power */
   .ai_power_content_area {
     flex-direction: column;
     gap: 4.8rem;
@@ -1026,8 +1044,8 @@
 
   /* faq area */
   .faq-area {
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .faq-area .flex > * {
@@ -1038,11 +1056,6 @@
   /* compliance products page */
   /* ======================================= */
   /* audit management */
-  .audit-management {
-    padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
-  }
-
   .audit-management .flex > * {
     flex: 0 0 100%;
   }
@@ -1067,8 +1080,8 @@
 
   /* related assets */
   .related-assets {
-    padding-top: 6.4rem;
-    padding-bottom: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .related-assets .title-2 {
@@ -1090,8 +1103,8 @@
 
   /* benefits of audit */
   .benefits-of-audit {
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .benefits-of-audit .benefits__lg {
@@ -1104,8 +1117,8 @@
 
   /* cq features */
   .cq-features {
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .splide__slide.is-active .feature__item {
@@ -1129,8 +1142,7 @@
 
   /* cloud technology */
   .cloud-technology {
-    padding-top: 4.8rem;
-    padding-bottom: 13rem;
+    padding-bottom: 12rem;
   }
 
   .cloud-technology .flex > * {
@@ -1140,16 +1152,11 @@
 
   /* cq capabilities */
   .cq-capabilities {
-    padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   /* audit phase */
-  .audit-phase {
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
-  }
-
   .audit-phase .content .inner-img-sm {
     text-align: left;
   }
@@ -1166,8 +1173,8 @@
 
   /* qms software */
   .qms-software {
-    padding-top: 6.4rem;
-    padding-bottom: 13rem;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
   }
 
   .qms-software .flex > * {
@@ -1185,8 +1192,8 @@
 
   /* organization growth */
   .organization-growth {
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .organization-growth .flex > * {
@@ -1202,8 +1209,8 @@
 
   /* quality centric */
   .quality-centric {
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .quality-centric-splide .splide__slide .img-wrapper {
@@ -1366,6 +1373,10 @@
   .svg-circle {
     width: 116px;
     height: 116px;
+  }
+
+  .circular-progress .text {
+    font-size: 1.5rem;
   }
 
   .hero-home .circular-progress:nth-of-type(1) {
@@ -1597,7 +1608,18 @@
     bottom: 76vw;
   }
 
+  /* new colleague */
+  .new-colleague {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+
   /* connect cq */
+  .connect-cq {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+
   .connect-cq .content .cq-expert {
     width: 25rem;
     bottom: -3rem;
@@ -1623,7 +1645,7 @@
 
   /* footer landmark */
   .footer-landmark {
-    padding-top: 6rem;
+    padding-block: 6.4rem;
   }
 
   /* footer widgets */
@@ -1651,7 +1673,6 @@
   /* cq document */
   .cq-document {
     padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
   }
 
   .cq-document .content {
@@ -1686,7 +1707,7 @@
 
   /* ai power */
   .ai_power_main_area {
-    padding: 4.8rem 0;
+    padding-bottom: 6.4rem;
   }
 
   .ai_power_content_area {
@@ -1728,6 +1749,11 @@
   }
 
   /* faq area */
+  .faq-area {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+
   .faq-area .accordion__item:first-of-type::before,
   .faq-area .accordion__item:last-of-type::after {
     width: 3.2rem;
@@ -1764,22 +1790,33 @@
 
   /* related assets */
   .related-assets {
-    padding-top: 4.8rem;
+    padding-top: 6.4rem;
     padding-bottom: 6.4rem;
   }
 
   /* benefits of audit */
   .benefits-of-audit {
-    padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+
+  /* cq features*/
+  .cq-features {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
   }
 
   /* cloud technology */
   .cloud-technology {
-    padding-bottom: 9rem;
+    padding-bottom: 10rem;
   }
 
   /* cq capabilities */
+  .cq-capabilities {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+
   .cq-capabilities .flex > * {
     flex: 0 0 100%;
   }
@@ -1808,24 +1845,25 @@
 
   /* qms software */
   .qms-software {
-    padding-top: 4.8rem;
-    padding-bottom: 9rem;
+    padding-top: 6.4rem;
+    padding-bottom: 10rem;
   }
 
-  /* related checklist */
-  .related-checklist {
+  /* organization growth */
+  .organization-growth {
     padding-top: 6.4rem;
     padding-bottom: 6.4rem;
   }
 
+  /* related checklist */
   .related-checklist .checklist {
     grid-template-columns: 1fr;
   }
 
   /* quality centric */
   .quality-centric {
-    padding-top: 4.8rem;
-    padding-bottom: 4.8rem;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
   }
 
   /* ==================================== */
@@ -1991,6 +2029,10 @@
   .svg-circle {
     width: 96px;
     height: 96px;
+  }
+
+  .circular-progress .text {
+    font-size: 1.2rem;
   }
 
   .hero-home .circular-progress:nth-of-type(1) {
@@ -2165,12 +2207,6 @@
 
   .contact-card .grid {
     grid-template-columns: 1fr;
-  }
-
-  /* footer-landmark */
-  .footer-landmark {
-    padding-top: 4.8rem;
-    padding-bottom: 9rem;
   }
 
   /* footer widgets */
@@ -2431,8 +2467,12 @@
 
   /* circular progress bar */
   .svg-circle {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .circular-progress .text {
+    font-size: 1.1rem;
   }
 
   .hero-home .circular-progress:nth-of-type(2) {

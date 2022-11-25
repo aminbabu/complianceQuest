@@ -1,6 +1,62 @@
 // global object
 const GLOB = {};
 
+// data storage
+GLOB.storage = {
+  metrics: [
+    {
+      sige: "-",
+      value: 80,
+      text: "Infra Management",
+    },
+    {
+      sige: "-",
+      value: 80,
+      text: "CAPA raised per Year",
+    },
+    {
+      sige: "-",
+      value: 48,
+      text: "CAPA raised per Year",
+    },
+    {
+      sige: "-",
+      value: 50,
+      text: "Change Request",
+    },
+    {
+      sige: "-",
+      value: 24,
+      text: "Cost of Labor",
+    },
+    {
+      sige: "+",
+      value: 54,
+      text: "Employee Engagement",
+    },
+    {
+      sige: "-",
+      value: 32,
+      text: "Customer Compliant",
+    },
+    {
+      sige: "-",
+      value: 70,
+      text: "Employee Training",
+    },
+    {
+      sige: "-",
+      value: 46,
+      text: "Audit Finding",
+    },
+    {
+      sige: "+",
+      value: 37,
+      text: "Customer Satisfaction",
+    },
+  ],
+};
+
 // toggle menu
 GLOB.toggleMenu = function () {
   const toggler = document.getElementById("navbarMenuBtn");
@@ -280,32 +336,38 @@ GLOB.createTypeWriter = function () {
 
 // modal
 GLOB.initModal = function () {
-  const tirggers =
-    Array.from(document.querySelectorAll("[data-modal-target]")) ||
-    Array.from(document.querySelectorAll("[data-modal-target]"));
+  const triggers = Array.from(document.querySelectorAll("[data-modal-target]"));
   const closeButtons = Array.from(document.querySelectorAll(".close-modal"));
 
-  if (!tirggers.length) return;
+  if (!triggers.length) return;
 
   function triggerModal(e) {
     e.preventDefault();
 
     const modalID =
-      this.dataset.modalTarget || trigger.getAttribute("data-modal-target");
+      this.dataset.modalTarget || this.getAttribute("data-modal-target");
     const modal = document.getElementById(modalID);
-
+    const modalSrc =
+      this.dataset.modalMediaSrc || this.getAttribute("modal-media-src");
     modal.classList.add("show");
     document.body.style.overflow = "hidden";
+
+    if (!modalSrc) return;
+    const target = modal.querySelector(".target");
+    target.src = modalSrc;
   }
 
   function closeModal() {
     const modal = this.closest(".modal");
+    const target = modal.querySelector(".target");
+
+    if (target) target.src = "";
 
     modal.classList.remove("show");
     document.body.style.overflow = "auto";
   }
 
-  tirggers.forEach(function (trigger) {
+  triggers.forEach(function (trigger) {
     trigger.addEventListener("click", triggerModal);
   });
   closeButtons.forEach(function (btn) {
@@ -443,8 +505,58 @@ GLOB.collapseToggler = function () {
   triggers.forEach(toggler);
 };
 
+// infinite stats changer
+GLOB.initStatsChanger = function () {
+  const data = [...GLOB.storage.metrics];
+  const barItems = Array.from(
+    document.getElementsByClassName("circular-progress")
+  );
+
+  const dataLen = data.length;
+  const interval = 6000;
+  let index = 0;
+
+  function changeContent(svg, text, index) {
+    svg.dataset.value = data[index].value;
+    text.innerHTML = data[index].text;
+
+    GLOB.initProgressBar(data[index].sige);
+  }
+
+  setInterval(() => {
+    if (index >= dataLen - 1) index = 0;
+
+    barItems.forEach(function (elem, i) {
+      const svg = elem.querySelector("svg");
+      const text = elem.querySelector(".text");
+
+      changeContent(svg, text, index + (i % 2));
+    });
+
+    index += index + 1;
+  }, interval);
+
+  // setInterval(() => {
+  //   if (index >= dataLen - 1) index = 0;
+
+  //   containers.forEach(function (container) {
+
+  //     changeContent(progressItems);
+  //   });
+
+  //   // element.querySelector("svg").dataset.value = data[index + i].value;
+  //   // element.querySelector(".text").innerHtml = data[index + i].text;
+
+  //   // GLOB.initProgressBar(data[index + i].sige);
+
+  //   index = index + 1;
+  // }, interval);
+};
+
 // document on load
 document.addEventListener("DOMContentLoaded", function () {
+  // infinite stats changer
+  GLOB.initStatsChanger();
   // toggle collapse
   GLOB.collapseToggler();
   // progressive circular animation
@@ -467,10 +579,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "#browseSolutionsThumbSplide",
     {
       type: "fade",
+      rewind: true,
       autoplay: true,
       interval: 6000,
       speed: 1200,
-      rewind: true,
       pagination: false,
       arrows: false,
       drag: false,
@@ -577,11 +689,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // cq heros slider
   GLOB.initSplide("#cqHerosSplide", {
-    type: "loop",
+    type: "fade",
+    rewind: true,
     pagination: false,
     autoplay: true,
     interval: 6000,
     drag: false,
+    speed: 1200,
   });
   // type writer
   GLOB.createTypeWriter();
@@ -602,7 +716,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   GLOB.initSplide("#sayAboutUsSplide", {
-    type: "loop",
+    type: "fade",
+    rewind: true,
     pagination: false,
     arrows: false,
     autoplay: true,
@@ -615,6 +730,44 @@ document.addEventListener("DOMContentLoaded", function () {
   GLOB.extentHeight();
 
   /*****************************************
+   * Home 2
+   *****************************************/
+  // trusted world clients slider
+  GLOB.initSplide("#trustedWorldSplide1", {
+    type: "loop",
+    pagination: false,
+    arrows: false,
+    direction: "ttb",
+    height: 810,
+    gap: 24,
+    autoHeight: true,
+    autoplay: true,
+    interval: 2000,
+    speed: 1000,
+    breakpoints: {
+      575: {
+        height: 672,
+      },
+    },
+  });
+  GLOB.initSplide("#trustedWorldSplide2", {
+    type: "loop",
+    pagination: false,
+    arrows: false,
+    direction: "ttb",
+    gap: 24,
+    height: 810,
+    autoHeight: true,
+    autoplay: true,
+    interval: 2000,
+    speed: 1200,
+    breakpoints: {
+      575: {
+        height: 672,
+      },
+    },
+  });
+  /*****************************************
    * Compliance EHS Page
    *****************************************/
   GLOB.initAccordion();
@@ -624,6 +777,7 @@ document.addEventListener("DOMContentLoaded", function () {
    *****************************************/
   // related assets slider
   GLOB.initSplide("#relatedAssetsSplide", {
+    drag: false,
     pagination: false,
     arrows: false,
     perPage: 3,
@@ -704,13 +858,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // quality centric slider
   GLOB.initSplide("#qualityCentricSplide", {
+    type: "loop",
     pagination: false,
     arrows: false,
     perPage: 6,
     perMove: 1,
-    padding: {
-      right: "7%",
-    },
     breakpoints: {
       1199: {
         perPage: 5,

@@ -23,31 +23,33 @@
   <body>
     <!-- app starts -->
     <div id="app">
-      <!-- top notification bar starts -->
-      <section id="topNotificationBar" class="top-notification-bar">
-        <div class="container">
-          <p class="text-6">
-            <span class="text-5">The Platform Chronicles:</span>
-            10 Questions with Prashanth Rajendran, CEO, ComplianceQuest
-          </p>
-          <a
-            href="#"
-            class="cq-btn cq-btn-outline-white rounded-pill cq-arrow-btn"
-          >
-            <span class="icon">
-              <i class="fa-solid fa-angle-right"></i>
-            </span>
-            <span class="text">Explore Now</span>
-          </a>
-          <button id="closeBtn" class="close-btn">
-            <i class="fa-regular fa-circle-xmark"></i>
-          </button>
-        </div>
-      </section>
-      <!-- top notification bar ends -->
 
       <!-- header main starts -->
       <header id="headerMain" class="header-main">
+        <!-- top notification bar starts -->
+        <section id="topNotificationBar" class="top-notification-bar">
+          <div class="container">
+            <p class="text-6">
+              <span class="text-5">The Platform Chronicles:</span>
+              10 Questions with Prashanth Rajendran, CEO, ComplianceQuest
+            </p>
+            <a
+              href="#"
+              class="cq-btn cq-btn-outline-white rounded-pill cq-arrow-btn"
+            >
+              <span class="icon">
+                <i class="fa-solid fa-angle-right"></i>
+              </span>
+              <span class="text">Explore Now</span>
+            </a>
+            <button id="closeBtn" class="close-btn">
+              <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+          </div>
+        </section>
+        <!-- top notification bar ends -->
+
+        <!-- navbar main starts -->
         <nav class="navbar-main">
           <div class="container">
             <a href="./index.html" class="navbar-main__brand">
@@ -8394,6 +8396,7 @@
             </div>
           </div>
         </nav>
+        <!-- navbar main ends -->
       </header>
       <!-- header main ends -->
 
@@ -8409,11 +8412,15 @@
           <div class="container">
             <div class="inner-content">
               <div class="hero-content">
-                <h1 class="title-hero">
+                <h1 class="title-hero" style="padding-right: 10px">
                   Power Your Enterprise with CQ.AI for Clinical, Quality, Health
                   and Safety
                 </h1>
-                <div class="inner-img-sm" data-modal-target="heroImgModal">
+                <div
+                  class="inner-img-sm"
+                  data-modal-target="aiOverviewModal"
+                  data-modal-media-src="./assets/images/home-hero-img2.png"
+                >
                   <img
                     src="./assets/images/home-hero-img2.png"
                     alt=""
@@ -8439,7 +8446,8 @@
               </div>
               <div
                 class="hero-img inner-img-lg"
-                data-modal-target="heroImgModal"
+                data-modal-target="aiOverviewModal"
+                data-modal-media-src="./assets/images/home-hero-img2.png"
               >
                 <img
                   src="./assets/images/home-hero-img2.png"
@@ -8482,7 +8490,11 @@
                 predictive analytics.
               </p>
             </div>
-            <div class="img-wrapper" data-modal-target="aiOverviewModal">
+            <div
+              class="img-wrapper"
+              data-modal-target="aiOverviewModal"
+              data-modal-media-src="./assets/images/modal-img.png"
+            >
               <img
                 src="./assets/images/ai-overview-img.png"
                 alt="AI Overview"
@@ -8869,94 +8881,212 @@
               </div>
 
               <div class="trusted-world-right-content">
-                <div class="trusted-world-right-left-content">
-                  <div class="single-trusted-world-content">
-                    <div class="single-trusted-world-text">
-                      <p>
-                        be trained fairly easily. The CQ team is very
-                        knowledgeable — provided customization services
-                        tailoring to our needs. Would recommend 100%.
-                      </p>
-                      <h5>
-                        Great software with a great team to back it up with!
-                      </h5>
-                      <a href="#"
-                        >Andi Xie, Quality Engineer, Continental Contitech</a
-                      >
-                    </div>
+                <div
+                  id="trustedWorldSplide1"
+                  class="splide trusted-world-right-left-content"
+                  role="group"
+                  aria-label="Trusted world splide"
+                >
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-text">
+                            <p>
+                              be trained fairly easily. The CQ team is very
+                              knowledgeable — provided customization services
+                              tailoring to our needs. Would recommend 100%.
+                            </p>
+                            <h5>
+                              Great software with a great team to back it up
+                              with!
+                            </h5>
+                            <a href="#"
+                              >Andi Xie, Quality Engineer, Continental
+                              Contitech</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-logo">
+                            <a href="#"
+                              ><img src="assets/images/l1.png" alt="Images"
+                            /></a>
+                          </div>
+                          <div class="single-trusted-world-text ceat">
+                            <p>
+                              We have just migrated our change, complaint, audit
+                              and document management system onto the eQMS
+                              provided by Compliance Quest. Compliance Quest has
+                              given excellent support in providing customization
+                              to our specific QMS requirements and sustained
+                              guidance through the entire migration and
+                              integration process.We are receiving excellent
+                              feedback from the users on the interactive and
+                              easy to user interface. Data analysis & review and
+                              cross functional collaboration can be done in
+                              real-time which has really enhanced our QMS.
+                              Highly recommended!
+                            </p>
+                            <h5>EQMS done the right way!!!</h5>
+                            <a href="#">Sudharshan Shetty</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-text">
+                            <p>
+                              be trained fairly easily. The CQ team is very
+                              knowledgeable — provided customization services
+                              tailoring to our needs. Would recommend 100%.
+                            </p>
+                            <h5>
+                              Great software with a great team to back it up
+                              with!
+                            </h5>
+                            <a href="#"
+                              >Andi Xie, Quality Engineer, Continental
+                              Contitech</a
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-logo">
+                            <a href="#"
+                              ><img src="assets/images/l1.png" alt="Images"
+                            /></a>
+                          </div>
+                          <div class="single-trusted-world-text ceat">
+                            <p>
+                              We have just migrated our change, complaint, audit
+                              and document management system onto the eQMS
+                              provided by Compliance Quest. Compliance Quest has
+                              given excellent support in providing customization
+                              to our specific QMS requirements and sustained
+                              guidance through the entire migration and
+                              integration process.We are receiving excellent
+                              feedback from the users on the interactive and
+                              easy to user interface. Data analysis & review and
+                              cross functional collaboration can be done in
+                              real-time which has really enhanced our QMS.
+                              Highly recommended!
+                            </p>
+                            <h5>EQMS done the right way!!!</h5>
+                            <a href="#">Sudharshan Shetty</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-
-                  <div class="single-trusted-world-content">
-                    <div class="single-trusted-world-logo">
-                      <a href="#"
-                        ><img src="assets/images/l1.png" alt="Images"
-                      /></a>
-                    </div>
-                    <div class="single-trusted-world-text ceat">
-                      <p>
-                        We have just migrated our change, complaint, audit and
-                        document management system onto the eQMS provided by
-                        Compliance Quest. Compliance Quest has given excellent
-                        support in providing customization to our specific QMS
-                        requirements and sustained guidance through the entire
-                        migration and integration process.We are receiving
-                        excellent feedback from the users on the interactive and
-                        easy to user interface. Data analysis & review and cross
-                        functional collaboration can be done in real-time which
-                        has really enhanced our QMS. Highly recommended!
-                      </p>
-                      <h5>EQMS done the right way!!!</h5>
-                      <a href="#">Sudharshan Shetty</a>
-                    </div>
-                  </div>
-
-                  <div class="single-trusted-world-content"></div>
                 </div>
-
-                <div class="trusted-world-right-right-content">
-                  <div class="single-trusted-world-content"></div>
-
-                  <div class="single-trusted-world-content">
-                    <div class="single-trusted-world-logo">
-                      <a href="#"
-                        ><img src="assets/images/l2.png" alt="Images"
-                      /></a>
-                    </div>
-                    <div class="single-trusted-world-text">
-                      <p>
-                        We went through a very detailed selection process when
-                        we decided to replace our other Quality Management
-                        System. Out of 17 vendors, ComplianceQuest (CQ) was the
-                        solution for us. Began planning in April of 2017,
-                        implementing in May 2017 and went live with our first
-                        module the first part of September of 2017, with
-                        Document Management. We have since been adding modules
-                        one at a time.
-                      </p>
-                      <h5>
-                        ComplianceQuest is a great solution for a Quality
-                        Management System!
-                      </h5>
-                      <a href="#">Kriss Pavik, IT Project Manager</a>
-                    </div>
-                  </div>
-
-                  <div class="single-trusted-world-content">
-                    <div class="single-trusted-world-logo">
-                      <a href="#"
-                        ><img src="assets/images/l3.png" alt="Images"
-                      /></a>
-                    </div>
-                    <div class="single-trusted-world-text">
-                      <p>
-                        We’ve been working with Compliance Quest for over a year
-                        with great results integrating our QMS system and giving
-                        us the opportunity to globally improve in so many ways!
-                        we will integrate all our processes into this amazing
-                        tool to take our business to the next level! Excellent
-                        support at any time!
-                      </p>
-                    </div>
+                <div
+                  id="trustedWorldSplide2"
+                  class="splide trusted-world-right-right-content"
+                  role="group"
+                  aria-label="Trusted world splide"
+                >
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-logo">
+                            <a href="#"
+                              ><img src="assets/images/l2.png" alt="Images"
+                            /></a>
+                          </div>
+                          <div class="single-trusted-world-text">
+                            <p>
+                              We went through a very detailed selection process
+                              when we decided to replace our other Quality
+                              Management System. Out of 17 vendors,
+                              ComplianceQuest (CQ) was the solution for us.
+                              Began planning in April of 2017, implementing in
+                              May 2017 and went live with our first module the
+                              first part of September of 2017, with Document
+                              Management. We have since been adding modules one
+                              at a time.
+                            </p>
+                            <h5>
+                              ComplianceQuest is a great solution for a Quality
+                              Management System!
+                            </h5>
+                            <a href="#">Kriss Pavik, IT Project Manager</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-logo">
+                            <a href="#"
+                              ><img src="assets/images/l3.png" alt="Images"
+                            /></a>
+                          </div>
+                          <div class="single-trusted-world-text">
+                            <p>
+                              We’ve been working with Compliance Quest for over
+                              a year with great results integrating our QMS
+                              system and giving us the opportunity to globally
+                              improve in so many ways! we will integrate all our
+                              processes into this amazing tool to take our
+                              business to the next level! Excellent support at
+                              any time!
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-logo">
+                            <a href="#"
+                              ><img src="assets/images/l2.png" alt="Images"
+                            /></a>
+                          </div>
+                          <div class="single-trusted-world-text">
+                            <p>
+                              We went through a very detailed selection process
+                              when we decided to replace our other Quality
+                              Management System. Out of 17 vendors,
+                              ComplianceQuest (CQ) was the solution for us.
+                              Began planning in April of 2017, implementing in
+                              May 2017 and went live with our first module the
+                              first part of September of 2017, with Document
+                              Management. We have since been adding modules one
+                              at a time.
+                            </p>
+                            <h5>
+                              ComplianceQuest is a great solution for a Quality
+                              Management System!
+                            </h5>
+                            <a href="#">Kriss Pavik, IT Project Manager</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-trusted-world-content">
+                          <div class="single-trusted-world-logo">
+                            <a href="#"
+                              ><img src="assets/images/l3.png" alt="Images"
+                            /></a>
+                          </div>
+                          <div class="single-trusted-world-text">
+                            <p>
+                              We’ve been working with Compliance Quest for over
+                              a year with great results integrating our QMS
+                              system and giving us the opportunity to globally
+                              improve in so many ways! we will integrate all our
+                              processes into this amazing tool to take our
+                              business to the next level! Excellent support at
+                              any time!
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -9578,36 +9708,13 @@
             <button type="button" class="close-modal"></button>
             <div class="modal-body">
               <div class="img-wrapper">
-                <img
-                  src="./assets/images/modal-img.png"
-                  alt=""
-                  class="img-fluid"
-                />
+                <img src="" alt="" class="img-fluid target" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- ai overview modal ends -->
-
-      <!-- hero image modal starts -->
-      <div id="heroImgModal" class="modal hero-img-modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <button type="button" class="close-modal"></button>
-            <div class="modal-body">
-              <div class="img-wrapper text-center">
-                <img
-                  src="./assets/images/home-hero-img2.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- hero image modal ends -->
     </div>
     <!-- extra elems ends -->
 
