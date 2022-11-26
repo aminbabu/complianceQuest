@@ -2041,14 +2041,14 @@ textarea.form-control {
   gap: 1.6rem;
 }
 
-.footer-copyright .social-media-list {
+.social-media-list {
   flex: 0 0 25%;
   display: flex;
   align-items: center;
   gap: 1.6rem;
 }
 
-.footer-copyright .social-media__link {
+.social-media__link {
   width: 4rem;
   height: 4rem;
   border: 1px solid var(--cq-mostly-white-500, #e4e3ee);
@@ -2060,7 +2060,17 @@ textarea.form-control {
   transition: 300ms ease;
 }
 
-.footer-copyright .social-media__link:hover {
+.social-media__link:hover {
+  border-color: var(--cq-strong-blue, #0072bc);
+  color: var(--cq-strong-blue, #0072bc);
+}
+
+.social-media-list-dark .social-media__link {
+  color: var(--cq-very-dark-gray-200, #484848);
+  border-color: var(--cq-very-dark-gray-200, #484848);
+}
+
+.social-media-list-dark .social-media__link:hover {
   border-color: var(--cq-strong-blue, #0072bc);
   color: var(--cq-strong-blue, #0072bc);
 }
@@ -4984,4 +4994,11 @@ aviation page
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+/* ===================================
+=> Blog Details 
+==================================== */
+.blog-details .hero {
+  padding-top: 6.4rem;
 }
