@@ -862,6 +862,9 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     arrows: false,
     perPage: 6,
+    autoplay: true,
+    speed: 1000,
+    interval: 2000,
     perMove: 1,
     breakpoints: {
       1199: {

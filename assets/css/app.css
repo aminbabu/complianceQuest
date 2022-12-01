@@ -102,6 +102,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--cq-strong-blue, #0072bc);
 }
 
 li {
@@ -3438,7 +3439,7 @@ textarea.form-control {
 /* manage workflow */
 .manage-workflow {
   padding-top: 9rem;
-  padding-bottom: 13rem;
+  padding-bottom: 48rem;
   position: relative;
 }
 
@@ -3460,7 +3461,7 @@ textarea.form-control {
 /* qms software */
 .qms-software {
   padding-top: 12rem;
-  padding-bottom: 20rem;
+  padding-bottom: 35rem;
   position: relative;
 }
 
