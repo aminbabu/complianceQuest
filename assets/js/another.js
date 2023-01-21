@@ -76,6 +76,80 @@ GLOB.tableOfContent = function (selector = ".toc-link") {
   });
 };
 
+// meet slider
+GLOB.meedSlider = function () {
+  const container = document.getElementById("testimonialReviewSplide");
+  const tabPanes = Array.from(
+    document.querySelectorAll(
+      ".sponsor-customer-wrapper .sponsor-customer-list"
+    )
+  );
+  const links = Array.from(
+    document.querySelectorAll(".sponsor-customer-wrapper .customer-link")
+  );
+  const linksDesktop = Array.from(
+    document.querySelectorAll(".customer-list-lg .customer-link")
+  );
+
+  if (!container) return;
+
+  const slider = new Splide(container, {
+    type: "fade",
+    drag: false,
+    speed: 1200,
+    gap: 30,
+  });
+
+  slider.mount();
+
+  slider.on("moved", function (newIndex) {
+    tabPanes.forEach(function (pane) {
+      pane.classList.remove("active");
+    });
+    tabPanes[newIndex].classList.add("active");
+  });
+
+  if (!links.length) return;
+
+  function getSlideIndex(selector = null) {
+    const elem = document.querySelector(selector);
+    if (!elem) return 0;
+
+    const slides = slider.Components.Slides;
+    let slideIndex = 0;
+
+    slides.forEach(function (el) {
+      if (el.slide.querySelector(selector)) {
+        slideIndex = el.index;
+      }
+    }, true);
+
+    return slideIndex;
+  }
+
+  function customLinks(link, index) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = this.dataset.href || this.getAttribute("href");
+      const elem = document.querySelector(id);
+      const destIndex = getSlideIndex(id);
+      const rect = elem.getBoundingClientRect();
+      const postionTop = rect.top + window.scrollY;
+
+      slider.go(destIndex);
+      window.scrollTo(0, postionTop - 140);
+
+      elem.classList.add("flash");
+      setTimeout(() => {
+        elem.classList.remove("flash");
+      }, 1000);
+    });
+  }
+
+  linksDesktop.forEach(customLinks);
+  links.forEach(customLinks);
+};
+
 // document on load
 document.addEventListener("DOMContentLoaded", function () {
   // cq heros slider
@@ -116,11 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   // cq meet team slider
-  GLOB.initSplide("#testimonialReviewSplide", {
-    drag: false,
-    speed: 1200,
-    gap: 30,
-  });
+  GLOB.meedSlider();
   GLOB.filterTabs();
   GLOB.socialShrareButtons(".ass_interface");
   GLOB.tableOfContent();
