@@ -1,3 +1,15 @@
+.img-fluid-sm {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: none;
+}
+
+.guided-html {
+  scroll-padding-top: 8rem;
+}
+
 .cq-fearuted-heros {
   position: relative;
 }
@@ -55,7 +67,7 @@
   align-items: center;
   gap: 2.4rem;
   position: absolute;
-  bottom: 20%;
+  bottom: 9.5rem;
   right: 8%;
 }
 
@@ -333,15 +345,33 @@
 }
 
 .guided-sidebar {
-  background-color: #f7f7f7;
-  padding: 6rem 3rem;
-  border-radius: 0.4rem;
   position: absolute;
   top: 0;
   left: 0;
-  width: 27rem;
-  height: fit-content;
+  right: 0;
   z-index: 1;
+  transition: 200ms;
+  height: fit-content;
+  pointer-events: none;
+}
+
+.guided-sidebar.sticky {
+  position: fixed;
+  top: 10rem;
+}
+
+.guided-sidebar.sticky .wrapper {
+  max-width: 136rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guided-sidebar .content {
+  pointer-events: all;
+  width: 27rem;
+  background-color: #f7f7f7;
+  padding: 6rem 3rem;
+  border-radius: 0.4rem;
 }
 
 .guided-table-content {
@@ -389,7 +419,7 @@
 .guided-post .content-section-5,
 .guided-post .content-section-6 {
   position: relative;
-  padding-block: 8% 12%;
+  padding-block: 8% 10%;
 }
 
 .guided-post .content-section-1 {
@@ -417,6 +447,13 @@
 .guided-post .content-section-5 .content,
 .guided-post .content-section-6 .content {
   max-width: 85rem;
+}
+
+.guided-post .content-section-3,
+.guided-post .content-section-4,
+.guided-post .content-section-5,
+.guided-post .content-section-6 {
+  padding-top: 4%;
 }
 
 .guided-post .content-section-1 .ass_interface {
@@ -530,7 +567,7 @@
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 .testimonial-review-sliders .left,
@@ -541,7 +578,6 @@
 
 .testimonial-review-splide-item {
   height: 100%;
-  overflow: hidden;
 }
 
 .testimonial-review-splide-item:not(.splide-media) {
@@ -565,7 +601,9 @@
   margin-bottom: 0.5rem;
 }
 
-.testimonial-review-splide-item.splide-media img {
+.testimonial-review-splide-item.splide-media img,
+.testimonial-review-splide-item.splide-media video {
+  border-radius: 16px;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -659,4 +697,87 @@
   display: none;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem;
+}
+
+.graphic__star,
+.graphic__mountain,
+.graphic__mountain-1,
+.graphic__mountain-2 {
+  position: relative;
+}
+
+.graphic__star::before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background-image: url("../imgs/graphic-star.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.graphic__mountain::after,
+.graphic__mountain-1::after,
+.graphic__mountain-2::after {
+  content: "";
+  width: 12rem;
+  height: 3rem;
+  background-image: url("../imgs/graphic-mountain-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+}
+
+.graphic__mountain-1::after,
+.graphic__mountain-2::after {
+  width: 6.5rem;
+  height: 2.4rem;
+  background-image: url("../imgs/graphic-mountain-2.png");
+  right: 60%;
+}
+
+.graphic__mountain-2::after {
+  background-image: url("../imgs/graphic-mountain-3.png");
+  top: auto;
+  bottom: 99%;
+  right: 2rem;
+}
+
+.cq-team-video__banner {
+  position: relative;
+}
+
+.cq-team-video__banner video {
+  min-height: 28rem;
+  cursor: pointer;
+}
+
+.cq-team-video__banner .play__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  border-radius: 50rem;
+  z-index: 1;
+  pointer-events: none;
+  transition: 300ms;
+}
+
+.cq-team-video__banner .play__button.clicked {
+  opacity: 0;
+}
+
+.cq-team-video__banner .play__button svg {
+  fill: rgba(255, 255, 255, 0.75);
+  width: 6.4rem;
+  height: auto;
 }

@@ -150,6 +150,61 @@ GLOB.meedSlider = function () {
   links.forEach(customLinks);
 };
 
+// sticky sidebar
+GLOB.stickySidebar = function () {
+  const sidebar = document.getElementById("tableOfContent");
+  if (!sidebar) return;
+  const sidebarHeight = sidebar.clientHeight;
+  const footer = document.getElementById("footerMain");
+  var footerOffsetTop = footer.offsetTop;
+
+  window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+    const screen = this.innerWidth;
+
+    if (screen < 992) return sidebar.classList.remove("sticky");
+
+    if (scrollPosition > sidebar.offsetTop) {
+      sidebar.classList.add("sticky");
+    } else {
+      sidebar.classList.remove("sticky");
+    }
+    if (scrollPosition + sidebarHeight < footerOffsetTop) {
+      sidebar.style.top = `-${
+        scrollPosition + sidebarHeight - footerOffsetTop
+      }px`;
+    } else {
+      sidebar.style.top = 0;
+    }
+  });
+};
+
+// video banner controls
+GLOB.controlVideoBanner = function () {
+  const videos = Array.from(
+    document.querySelectorAll(".cq-team-video__banner video")
+  );
+
+  if (!videos.length) return;
+
+  videos.forEach(function (video) {
+    video.addEventListener("click", function () {
+      const btn = this.closest(".cq-team-video__banner").querySelector(
+        ".play__button"
+      );
+
+      if (video.paused) {
+        btn.classList.add("clicked");
+        video.play();
+        return;
+      }
+
+      btn.classList.remove("clicked");
+      video.pause();
+    });
+  });
+};
+
 // document on load
 document.addEventListener("DOMContentLoaded", function () {
   // cq heros slider
@@ -185,7 +240,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       575: {
         perPage: 1,
-        padding: { right: "25vw" },
       },
     },
   });
@@ -194,4 +248,6 @@ document.addEventListener("DOMContentLoaded", function () {
   GLOB.filterTabs();
   GLOB.socialShrareButtons(".ass_interface");
   GLOB.tableOfContent();
+  GLOB.stickySidebar();
+  GLOB.controlVideoBanner();
 });

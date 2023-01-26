@@ -1,3 +1,15 @@
+@media only screen and (min-width: 1600px) {
+  .guided-post .content-section-3,
+  .guided-post .content-section-4,
+  .guided-post .content-section-6 {
+    padding-top: 4%;
+  }
+
+  .guided-post .content-section-5 {
+    padding-top: 0;
+  }
+}
+
 @media only screen and (min-width: 1920px) {
   .cq-fearuted-heros {
     padding-bottom: 15%;
@@ -17,9 +29,8 @@
   /* guided post */
   .guided-post .content-section-3,
   .guided-post .content-section-4,
-  .guided-post .content-section-4,
-  .guided-post .content-section-5 {
-    padding-block: 3% 8%;
+  .guided-post .content-section-4 {
+    padding-block: 3% 7%;
   }
 
   .guided-post .content-section-2 {
@@ -62,7 +73,7 @@
   }
 
   .cq-featured-heros-splide .splide__arrows {
-    bottom: 10%;
+    bottom: 9rem;
     right: auto;
     left: 24vw;
   }
@@ -100,16 +111,11 @@
   .testimonial-review-splide-item:not(.splide-media) {
     padding: 2rem;
   }
-
-  .testimonial-review-sliders .left,
-  .testimonial-review-sliders .right {
-    gap: 1.6rem;
-  }
 }
 
 @media only screen and (max-width: 991px) {
   .cq-featured-heros-splide .splide__arrows {
-    bottom: 11%;
+    bottom: 8.5rem;
     left: 30vw;
   }
 
@@ -157,8 +163,21 @@
   }
 
   /* guided post */
+  .guided-html {
+    scroll-padding-top: 12rem;
+  }
+
   .guided-sidebar {
-    display: none;
+    position: static;
+    margin-bottom: 4rem;
+  }
+
+  .guided-sidebar .content {
+    width: 100%;
+  }
+
+  .guided-table-content {
+    gap: 2rem;
   }
 
   .guided-post [class^="content-section"] .container {
@@ -181,6 +200,24 @@
 
   .sponsor-customer-wrapper .sponsor-customer-list.active {
     display: grid;
+  }
+
+  .navbar-main-sm {
+    display: none;
+  }
+
+  .navbar-main-sm.show {
+    display: flex;
+    animation: fadeIn 300ms ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -242,6 +279,19 @@
     background-size: 200% auto;
     background-position: left center;
   }
+
+  /* guided post */
+  .guided-post.section {
+    padding-top: 15%;
+  }
+
+  .testimonial-review-splide-item.splide-media img.img-fluid {
+    display: none;
+  }
+
+  .testimonial-review-splide-item.splide-media img.img-fluid-sm {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -295,5 +345,15 @@
 
   .sponsor-customer-wrapper .sponsor-customer-list.active {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meet-team-card {
+    max-width: 28rem;
+    margin-inline: auto;
+  }
+
+  /* guided post */
+  .guided-post.section {
+    padding-top: 18%;
   }
 }
