@@ -109,6 +109,25 @@ GLOB.meedSlider = function () {
     tabPanes[newIndex].classList.add("active");
   });
 
+  slider.on("pagination:updated", function (data, prev, curr) {
+    const videos = Array.from(document.querySelectorAll("video"));
+
+    const y =
+      curr.button.closest(".splide").getBoundingClientRect().top +
+      window.scrollY;
+
+    window.scroll({
+      top: y - 150,
+      behavior: "smooth",
+    });
+
+    videos.forEach(function (video) {
+      if (!video.paused) {
+        video.pause();
+      }
+    });
+  });
+
   if (!links.length) return;
 
   function getSlideIndex(selector = null) {

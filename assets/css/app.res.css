@@ -2453,6 +2453,14 @@
   .widget_collapse .widget_flex {
     gap: 3.2rem;
   }
+
+  .main-sections > *:first-child {
+    padding-top: 7rem;
+  }
+
+  .navbar-main {
+    padding-block: 1rem;
+  }
 }
 
 @media all and (max-width: 480px) {
