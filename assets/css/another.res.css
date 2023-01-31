@@ -222,6 +222,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .guided-html {
+    scroll-padding-top: 17rem;
+  }
+
   .cq-featured-heros-splide .hero-img-item:not(.active) {
     display: none;
   }

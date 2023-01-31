@@ -178,22 +178,22 @@ GLOB.stickySidebar = function () {
   var footerOffsetTop = footer.offsetTop;
 
   window.addEventListener("scroll", function () {
-    const scrollPosition = window.scrollY;
-    const screen = this.innerWidth;
+    var $sidebar = document.getElementById("tableOfContent");
+    var $sidebarHeight = $sidebar.clientHeight;
+    var $footerOffsetTop = document.getElementById("footerMain").offsetTop;
 
-    if (screen < 992) return sidebar.classList.remove("sticky");
+    if (window.innerWidth < 992) return $sidebar.classList.remove("sticky");
 
-    if (scrollPosition > sidebar.offsetTop) {
-      sidebar.classList.add("sticky");
+    if (window.scrollY > $sidebar.offsetTop) {
+      $sidebar.classList.add("sticky");
     } else {
-      sidebar.classList.remove("sticky");
+      $sidebar.classList.remove("sticky");
     }
-    if (scrollPosition + sidebarHeight < footerOffsetTop) {
-      sidebar.style.top = `-${
-        scrollPosition + sidebarHeight - footerOffsetTop
-      }px`;
+    if (window.scrollY + $sidebarHeight > $footerOffsetTop) {
+      $sidebar.style.top =
+        -(window.scrollY + $sidebarHeight - $footerOffsetTop) + "px";
     } else {
-      sidebar.style.top = 0;
+      $sidebar.style.top = "10rem";
     }
   });
 };

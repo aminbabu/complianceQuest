@@ -7,7 +7,7 @@
 }
 
 .guided-html {
-  scroll-padding-top: 8rem;
+  scroll-padding-top: 16rem;
 }
 
 .cq-fearuted-heros {
@@ -353,6 +353,10 @@
   transition: 200ms;
   height: fit-content;
   pointer-events: none;
+}
+
+.guided-sidebar:not(.sticky) {
+  top: 0 !important;
 }
 
 .guided-sidebar.sticky {
