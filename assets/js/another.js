@@ -176,8 +176,7 @@ GLOB.stickySidebar = function () {
   const sidebarHeight = sidebar.clientHeight;
   const footer = document.getElementById("footerMain");
   var footerOffsetTop = footer.offsetTop;
-
-  window.addEventListener("scroll", function () {
+  function toggleSidebar() {
     var $sidebar = document.getElementById("tableOfContent");
     var $header = document.getElementById("headerMain");
     var $sidebarHeight = $sidebar.clientHeight;
@@ -196,6 +195,12 @@ GLOB.stickySidebar = function () {
     } else {
       $sidebar.style.top = $header.clientHeight + "px";
     }
+  }
+
+  toggleSidebar();
+
+  window.addEventListener("scroll", function () {
+    toggleSidebar();
   });
 };
 
@@ -231,10 +236,7 @@ GLOB.scrollPadding = function () {
   const header = document.getElementById("headerMain");
 
   window.addEventListener("scroll", function () {
-    root.style.setProperty(
-      "--scroll-padding-top",
-      `${header.clientHeight + 10}px`
-    );
+    root.style.setProperty("--scroll-padding-top", `${header.clientHeight}px`);
   });
 };
 

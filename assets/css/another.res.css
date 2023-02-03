@@ -1,12 +1,28 @@
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 992px) {
+  /* guided post */
+  .guided-post .content-section-2,
   .guided-post .content-section-3,
   .guided-post .content-section-4,
-  .guided-post .content-section-6 {
-    padding-top: 4%;
+  .guided-post .content-section-5,
+  .guided-post .content-section-6,
+  .guided-post .content-section-7 {
+    padding-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  /* guided post */
+  .guided-post .content-section-2,
+  .guided-post .content-section-3,
+  .guided-post .content-section-4,
+  .guided-post .content-section-5,
+  .guided-post .content-section-6,
+  .guided-post .content-section-7 {
+    padding-top: 3%;
   }
 
-  .guided-post .content-section-5 {
-    padding-top: 0;
+  .guided-post .content-section-4 {
+    padding-bottom: 6%;
   }
 }
 
@@ -19,6 +35,11 @@
   .meet-customers {
     padding-block: 0 15%;
   }
+
+  /* guided post */
+  .guided-post .content-section-2 {
+    padding-block: 10%;
+  }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -27,14 +48,8 @@
   }
 
   /* guided post */
-  .guided-post .content-section-3,
-  .guided-post .content-section-4,
-  .guided-post .content-section-4 {
-    padding-block: 3% 7%;
-  }
-
   .guided-post .content-section-2 {
-    padding-block: 14% 10%;
+    padding-block: 11%;
   }
 }
 
@@ -60,6 +75,11 @@
   /* platform tabs */
   .cq-filtering-content {
     gap: 2rem;
+  }
+
+  /* guided post */
+  .guided-sidebar .wrapper {
+    max-width: 118rem;
   }
 }
 
@@ -110,6 +130,10 @@
 
   .testimonial-review-splide-item:not(.splide-media) {
     padding: 2rem;
+  }
+
+  .guided-sidebar .wrapper {
+    max-width: 90%;
   }
 }
 
@@ -311,10 +335,6 @@
   }
 
   /* guided post */
-  .guided-post .content-section-2 {
-    padding-bottom: 40rem;
-  }
-
   .guided-post .content-section-2 .bg-holder {
     display: none;
   }
@@ -351,5 +371,9 @@
   /* guided post */
   .guided-post.section {
     padding-top: 18%;
+  }
+
+  .guided-post .content-section-2 {
+    padding-bottom: 100%;
   }
 }

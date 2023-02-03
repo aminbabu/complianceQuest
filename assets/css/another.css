@@ -1,5 +1,5 @@
 :root {
-  --scroll-padding-top: 16rem;
+  --scroll-padding-top: 0;
 }
 
 .img-fluid-sm {
@@ -374,7 +374,7 @@
   top: 10rem;
 }
 
-.guided-sidebar.sticky .wrapper {
+.guided-sidebar .wrapper {
   max-width: 136rem;
   margin-left: auto;
   margin-right: auto;
@@ -426,18 +426,19 @@
   visibility: visible;
 }
 
-.guided-post .content-section-1,
+.guided-post .content-section-1 {
+  padding-top: 0;
+  position: relative;
+}
+
 .guided-post .content-section-2,
 .guided-post .content-section-3,
 .guided-post .content-section-4,
 .guided-post .content-section-5,
-.guided-post .content-section-6 {
+.guided-post .content-section-6,
+.guided-post .content-section-7 {
   position: relative;
-  padding-block: 8% 10%;
-}
-
-.guided-post .content-section-1 {
-  padding-top: 0 !important;
+  padding-top: 4rem;
 }
 
 .guided-post [class^="content-section"] .container {
@@ -461,13 +462,6 @@
 .guided-post .content-section-5 .content,
 .guided-post .content-section-6 .content {
   max-width: 85rem;
-}
-
-.guided-post .content-section-3,
-.guided-post .content-section-4,
-.guided-post .content-section-5,
-.guided-post .content-section-6 {
-  padding-top: 4%;
 }
 
 .guided-post .content-section-1 .ass_interface {
