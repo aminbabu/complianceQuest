@@ -179,6 +179,7 @@ GLOB.stickySidebar = function () {
 
   window.addEventListener("scroll", function () {
     var $sidebar = document.getElementById("tableOfContent");
+    var $header = document.getElementById("headerMain");
     var $sidebarHeight = $sidebar.clientHeight;
     var $footerOffsetTop = document.getElementById("footerMain").offsetTop;
 
@@ -193,7 +194,7 @@ GLOB.stickySidebar = function () {
       $sidebar.style.top =
         -(window.scrollY + $sidebarHeight - $footerOffsetTop) + "px";
     } else {
-      $sidebar.style.top = "10rem";
+      $sidebar.style.top = $header.clientHeight + "px";
     }
   });
 };
@@ -221,6 +222,19 @@ GLOB.controlVideoBanner = function () {
       btn.classList.remove("clicked");
       video.pause();
     });
+  });
+};
+
+// scroll padding
+GLOB.scrollPadding = function () {
+  const root = document.querySelector(":root");
+  const header = document.getElementById("headerMain");
+
+  window.addEventListener("scroll", function () {
+    root.style.setProperty(
+      "--scroll-padding-top",
+      `${header.clientHeight + 10}px`
+    );
   });
 };
 
@@ -269,4 +283,5 @@ document.addEventListener("DOMContentLoaded", function () {
   GLOB.tableOfContent();
   GLOB.stickySidebar();
   GLOB.controlVideoBanner();
+  GLOB.scrollPadding();
 });

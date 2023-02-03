@@ -1,3 +1,7 @@
+:root {
+  --scroll-padding-top: 16rem;
+}
+
 .img-fluid-sm {
   max-width: 100%;
   height: auto;
@@ -7,7 +11,7 @@
 }
 
 .guided-html {
-  scroll-padding-top: 16rem;
+  scroll-padding-top: var(--scroll-padding-top);
 }
 
 .cq-fearuted-heros {
@@ -303,6 +307,12 @@
 /* guided post */
 .guided-post > .container {
   position: relative;
+}
+
+.guided-sidebar .wrapper {
+  max-width: 136rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .guided-post .ass_interface ul {

@@ -163,10 +163,6 @@
   }
 
   /* guided post */
-  .guided-html {
-    scroll-padding-top: 12rem;
-  }
-
   .guided-sidebar {
     position: static;
     margin-bottom: 4rem;
@@ -222,10 +218,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .guided-html {
-    scroll-padding-top: 17rem;
-  }
-
   .cq-featured-heros-splide .hero-img-item:not(.active) {
     display: none;
   }
